@@ -1,26 +1,71 @@
+<?php
+/**
 
+ */
 get_header(); ?>
 
-<div id="primary" class="content-area">
-  <main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-  <?php while ( have_posts() ) : the_post(); ?>
+		<?php if ( have_posts() ) : ?>
 
-    <?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
 
-    <?php the_post_navigation(); ?>
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-    <?php
-      // If comments are open or we have at least one comment, load up the comment template.
-      if ( comments_open() || get_comments_number() ) :
-        comments_template();
-      endif;
-    ?>
 
-  <?php endwhile; // End of the loop. ?>
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <header class="entry-header">
+              <?php if ( has_post_thumbnail() ) : ?>
+                <?php the_post_thumbnail( 'large' ); ?>
+              <?php endif; ?>
+          
+              <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+          
+              <div class="entry-meta">
+            
+                <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+              </div><!-- .entry-meta -->
+            </header><!-- .entry-header -->
+          
+            <div class="entry-content">
+            <h1> I exist</h1>
+            <?php echo CFS()->get( 'price' ); ?>
+            
+              <?php the_content(); ?>
+              <?php
+                wp_link_pages( array(
+                  'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+                  'after'  => '</div>',
+                ) );
+              ?>
+            </div><!-- .entry-content -->
+          
+            <footer class="entry-footer">
+              <?php red_starter_entry_footer(); ?>
+            </footer><!-- .entry-footer -->
+          </article><!-- #post-## -->
 
-  </main><!-- #main -->
-</div><!-- #primary -->
+			<?php endwhile; ?>
+
+			<?php the_posts_navigation(); ?>
+
+		<?php else : ?>
+
+		
+
+
+		<?php endif; ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+

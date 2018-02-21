@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-
+add_filter( 'login_headertitle', 'inhabitent_login_title');
 /**
  * Adds custom classes to the array of body classes.
  *
@@ -46,5 +46,41 @@ function inhabitent_login_title() {
 	return 'Inhabitent';
 }
 
-add_filter( 'login_headertitle', 'inhabitent_login_title');
-?>
+/*
+function hero_style() {
+	?> <style> 
+	.hero-image {
+		height: 200px;
+		width: 100%;
+		position: relative;
+		display: block;
+		z-index: -1;
+	}
+	</style>
+	<?php
+}*/
+
+
+
+
+function hero_style() {
+
+	if ( ! is_page_template('page-templates/about.php')) {
+		return;
+	}
+	$image =  CFS()->get( 'hero_image' );
+
+	$banner_css = ".page-template-about .entry-header {
+		background:	
+		linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), 
+		url({$image}); no-repeat center bottom;
+		background-size:cover, cover;
+		height: 100vh;
+	}";
+
+	wp_add_inline_style ('inhabitent-style', $banner_css);
+}
+
+
+add_action( 'wp_enqueue_scripts', 'hero_style');
+
