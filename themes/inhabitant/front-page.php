@@ -21,11 +21,6 @@ get_header(); ?>
 
 
 
-
-
-
-
-
 <!-- Product terms -->
             <section class="product-info container">
                 <h2>Shop Stuff</h2>
@@ -40,7 +35,7 @@ get_header(); ?>
                         <?php foreach ( $terms as $term ) :
                             ?>
                             <div class="product-type-block-wrapper">
-                                <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg"
+                                <img class="prod-type-img" src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg"
                                      alt="<?php echo $term->name; ?>"/>
                                 <p><?php echo $term->description; ?></p>
                                 <p>
@@ -55,7 +50,7 @@ get_header(); ?>
 
 
 
-<h2> Journal </h2>
+<h2> Inhabitent Journal </h2>
 
 <?php $args = array(
   	'order' => 'ASC',
@@ -66,22 +61,27 @@ get_header(); ?>
 <?php $journal = new WP_Query( $args ); /* $args set above*/ ?>
 <?php if ( $journal->have_posts() ) : ?>
 
-	<?php while ( $journal->have_posts() ) : $journal->the_post(); ?>
+    <section class="journal-list">
+        <?php while ( $journal->have_posts() ) : $journal->the_post(); ?>
 
-		<h2>
-			<?php the_title(); ?>
-			<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'medium' ); ?>
-			<?php endif; ?>
-			<?php the_content(); ?>
-		</h2>
-	
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-			<a href="<?php the_permalink(); ?>">Read Entry</a>
-		</div><!-- .entry-meta -->
+        
+            <article class="journ-art">  
+                <?php if ( has_post_thumbnail() ) : ?>
+                <?php the_post_thumbnail( 'large' ); ?>
+                <?php the_title(); ?>
+                <?php endif; ?>
+                <?php the_content(); ?>
+        
+        
+                <div class="entry-meta">
+                <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+                <a href="<?php the_permalink(); ?>">Read Entry</a>
+                </div><!-- .entry-meta -->
+            </article>
 
-	<?php endwhile; ?>
+        <?php endwhile; ?>
+    </section>
+
   <?php the_posts_navigation(); ?>
   <?php wp_reset_postdata(); ?>
 

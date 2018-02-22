@@ -4,10 +4,29 @@
 
 /* Front page */
 
-/* About page */
-
-.page-template-about .entry-header {
+.product-type-blocks {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+
 }
+.product-type-block-wrappers {
+  width: 20%;
+  height: auto;
+}
+
+.prod-type-img {
+  width: 70px;
+  height: 70px;
+}
+
+.journal-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.journ-art {
+  width: 30%;
+  height: auto;
+}
+/* About page */
