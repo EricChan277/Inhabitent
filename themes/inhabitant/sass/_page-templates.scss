@@ -7,16 +7,22 @@
 .product-type-blocks {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 
 }
-.product-type-block-wrappers {
+.product-type-block-wrapper {
   width: 20%;
   height: auto;
+  border: solid 1px #e1e1e1;
+    p{
+      padding: 20px;
+    }
 }
 
 .prod-type-img {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
+  padding-top: 20px;
 }
 
 .journal-list {

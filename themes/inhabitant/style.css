@@ -699,15 +699,21 @@ object {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
-.product-type-block-wrappers {
+.product-type-block-wrapper {
   width: 20%;
-  height: auto; }
+  height: auto;
+  border: solid 1px #e1e1e1; }
+  .product-type-block-wrapper p {
+    padding: 20px; }
 
 .prod-type-img {
-  width: 70px;
-  height: 70px; }
+  width: 100px;
+  height: 100px;
+  padding-top: 20px; }
 
 .journal-list {
   display: -webkit-box;
