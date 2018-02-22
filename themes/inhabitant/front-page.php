@@ -68,12 +68,13 @@ get_header(); ?>
             <article class="journ-art">  
                 <?php if ( has_post_thumbnail() ) : ?>
                 <?php the_post_thumbnail( 'large' ); ?>
-                <?php the_title(); ?>
+                <h2>
+                     <?php the_title();?>
+                </h2> 
                 <?php endif; ?>
-                <?php the_content(); ?>
-        
-        
+               
                 <div class="entry-meta">
+    
                 <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
                 <a href="<?php the_permalink(); ?>">Read Entry</a>
                 </div><!-- .entry-meta -->
@@ -89,6 +90,7 @@ get_header(); ?>
       <h2>Nothing found!</h2>
 <?php endif; ?>
 
+                
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
 
