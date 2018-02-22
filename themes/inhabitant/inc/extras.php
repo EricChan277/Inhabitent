@@ -47,14 +47,14 @@ function inhabitent_login_title() {
 }
 
 
-// function hero_style() {
+// function front_hero_style() {
 
-// 	if ( ! is_page_template('/front-page.php')) {
+// 	if ( is_page_template('/front-page.php')) {
 // 		return;
 // 	}
 // 	$image =  CFS()->get( 'hero_image' );
 
-// 	$banner_css = ".page-template-about .entry-header {
+// 	$banner_css = ".page-template-default .entry-header {
 // 		background:	
 // 		linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), 
 // 		url({$image}); no-repeat center bottom;
@@ -84,6 +84,6 @@ function hero_style() {
 	wp_add_inline_style ('inhabitent-style', $banner_css);
 }
 
-// add_action( 'wp_enqueue_scripts', 'hero_style');
+// add_action( 'wp_enqueue_scripts', 'front_hero_style');
 add_action( 'wp_enqueue_scripts', 'hero_style');
 
