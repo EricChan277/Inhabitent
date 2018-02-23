@@ -77,4 +77,52 @@ big {
 	font-size: 125%;
 }
 
+footer {
+	color: white;
+	text-align: left;
+	font-size: 1.25rem;
+	
+	svg {
+		margin-right: 5px;
+	}
+
+	.copyright-footer {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		text-transform: uppercase;
+	}
+	p {
+		margin: .5rem 0 0 0;
+	}
+	#footer-sidebar1,
+	#footer-sidebar2,
+	#footer-sidebar3 {
+		height: 190px;
+
+	}
+
+	ul{
+		list-style: none;
+		margin-left: 0px;
+		padding-left: 0px;
+		
+		li{
+			margin-top: .5rem;
+			margin-right: 5px;
+			
+		}
+
+		.media-icons { 
+			display: flex;
+			flex-direction: row;
+		}
+	}
+	.widget-title {
+		color: #d99054;
+	}
+
+}
+
+
 

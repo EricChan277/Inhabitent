@@ -9,8 +9,7 @@
 
 			</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
-			<i class="fab fa-accessible-icon"></i>
+				<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">	<div id="footer-sidebar" class="secondary">
 				<div id="footer-sidebar1">
 				<?php
@@ -34,9 +33,9 @@
 				?>
 				</div>
 				</div>
-					
 
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s ' ), 'WordPress' ); ?></a>
+				<span class="copyright-footer">copyright &copy; 2018 inhabitent</span>
+
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

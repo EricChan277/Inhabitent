@@ -300,6 +300,47 @@ mark, ins {
 big {
   font-size: 125%; }
 
+footer {
+  color: white;
+  text-align: left;
+  font-size: 1.25rem; }
+  footer svg {
+    margin-right: 5px; }
+  footer .copyright-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase; }
+  footer p {
+    margin: .5rem 0 0 0; }
+  footer #footer-sidebar1,
+  footer #footer-sidebar2,
+  footer #footer-sidebar3 {
+    height: 190px; }
+  footer ul {
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px; }
+    footer ul li {
+      margin-top: .5rem;
+      margin-right: 5px; }
+    footer ul .media-icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+  footer .widget-title {
+    color: #d99054; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
