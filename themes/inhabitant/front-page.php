@@ -58,15 +58,18 @@ get_header(); ?>
             <article class="journ-art">  
                 <?php if ( has_post_thumbnail() ) : ?>
                 <?php the_post_thumbnail( 'large' ); ?>
-                <h2>
-                     <?php the_title();?>
-                </h2> 
+                
                 <?php endif; ?>
                
                 <div class="entry-meta">
-    
-                <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-                <a href="<?php the_permalink(); ?>">Read Entry</a>
+                    <div class="journal-text">
+                        <?php red_starter_posted_on(); ?> / 
+                        <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+                    </div>
+                <h2>
+                <a href="<?php the_permalink(); ?>"> <?php the_title();?></a>
+                </h2>  
+                <button href="<?php the_permalink(); ?>">Read Entry</button>
                 </div><!-- .entry-meta -->
             </article>
 

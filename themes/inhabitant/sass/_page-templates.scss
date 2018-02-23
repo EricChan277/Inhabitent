@@ -8,19 +8,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
+
 .product-type-block-wrapper {
   width: 20%;
   height: auto;
   border: solid 1px #e1e1e1;
   border-top-width: 10px;
-    p{
-      padding: 20px;
-    }
-    button {
-      background-color: grey;
-    }
+  p {
+    padding: 20px;
+  }
+  button {
+    background-color: grey;
+  }
 }
 
 .product-type-block-wrapper:hover {
@@ -37,10 +37,23 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
 
-.journ-art {
-  width: 30%;
-  height: auto;
+  .journ-art {
+    width: 30%;
+    height: 15%;
+    border: solid 1px #e1e1e1;
+    border-top-width: 10px;
+    
+    .entry-meta {
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+ 
+ 
+ 
+  }
+
 }
-/* About page */
+  /* About page */
