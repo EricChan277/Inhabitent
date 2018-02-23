@@ -340,6 +340,20 @@ footer {
               flex-direction: row; }
   footer .widget-title {
     color: #d99054; }
+  footer .footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; }
+    footer .footer-logo img {
+      width: 280px;
+      height: 50px; }
 
 /*--------------------------------------------------------------
 # Elements

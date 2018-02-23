@@ -9,14 +9,14 @@
 
 <?php if(strlen( trim( $saturday ) )>0): ?>
 <p>
-  <span calss="day-of-week">saturday:</span>
+  <span calss="day-of-week">Saturday:</span>
   <?php echo $saturday; ?>
 </p>
 <?php endif; ?>
 
 <?php if(strlen( trim( $sunday ) )>0): ?>
 <p>
-  <span calss="day-of-week">sunday:</span>
+  <span calss="day-of-week">Sunday:</span>
   <?php echo $sunday; ?>
 </p>
 <?php endif; ?>

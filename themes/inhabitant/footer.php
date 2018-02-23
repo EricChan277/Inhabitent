@@ -32,6 +32,7 @@
 				}
 				?>
 				</div>
+				<a class= "footer-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-text.svg" class="footer__logo-img"/></a>
 				</div>
 
 				<span class="copyright-footer">copyright &copy; 2018 inhabitent</span>
