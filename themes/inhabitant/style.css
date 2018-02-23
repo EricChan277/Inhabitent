@@ -481,6 +481,7 @@ a {
     float: left;
     position: relative; }
   .main-navigation a {
+    color: red;
     display: block;
     text-decoration: none; }
 
@@ -513,6 +514,23 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.menu-menu-1-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin-right: 50px; }
+  .menu-menu-1-container li {
+    margin: 0px 10px; }
+
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -706,9 +724,15 @@ object {
 .product-type-block-wrapper {
   width: 20%;
   height: auto;
-  border: solid 1px #e1e1e1; }
+  border: solid 1px #e1e1e1;
+  border-top-width: 10px; }
   .product-type-block-wrapper p {
     padding: 20px; }
+  .product-type-block-wrapper button {
+    background-color: grey; }
+
+.product-type-block-wrapper:hover {
+  border-color: #d99054; }
 
 .prod-type-img {
   width: 100px;

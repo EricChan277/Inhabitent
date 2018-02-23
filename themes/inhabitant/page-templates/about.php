@@ -22,7 +22,6 @@ get_header(); ?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<h1>I EXIST!</h1>
 
 		<h2>Our Story</h2>
 <?php echo CFS()->get( 'our_story' ); ?>

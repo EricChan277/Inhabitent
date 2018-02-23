@@ -14,9 +14,17 @@
   width: 20%;
   height: auto;
   border: solid 1px #e1e1e1;
+  border-top-width: 10px;
     p{
       padding: 20px;
     }
+    button {
+      background-color: grey;
+    }
+}
+
+.product-type-block-wrapper:hover {
+  border-color: #d99054;
 }
 
 .prod-type-img {
