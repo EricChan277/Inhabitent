@@ -4,6 +4,11 @@
 
 /* Front page */
 
+
+.front-hero-logo {
+  display:flex;
+  
+}
 .product-type-blocks {
   display: flex;
   flex-direction: row;
@@ -47,13 +52,13 @@
     .entry-meta {
       display: flex;
       flex-direction: column;
-    }
-
-    
- 
- 
+    } 
  
   }
 
 }
+
   /* About page */
+
+  
+  /* Store page */

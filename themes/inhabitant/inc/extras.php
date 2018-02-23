@@ -52,17 +52,20 @@ function front_hero_style() {
 	if (! is_front_page()) {
 		return;
 	}
-	$image =  CFS()->get( 'hero_image' );
-	// $logo = CFS()->get('hero_logo');
-
+	?>
+<?php
+	$image =  CFS()->get('hero_image');
+	$logo ?>= <?php get_template_directory_uri() .  '/images/logos/inhabitent-logo-full.svg'; ?>
+<?php
 	$banner_css = ".page-template-default .site-header {
 		background:	
-		url('../../inhabitant/images/logos/inhabitent-logo-full.svg') no-repeat center center,
 		linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), 
 		url({$image}); no-repeat center bottom;
 		background-size: 200px 200px, cover, cover;
 		height: 100vh;
 	}";
+
+
 
 	wp_add_inline_style ('inhabitent-style', $banner_css);
 }

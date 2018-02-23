@@ -606,6 +606,21 @@ a {
   float: left;
   width: 340px; }
 
+/* Find Us Page */
+.page-id-73 .hfeed {
+  width: 100%; }
+
+.page-id-73 .find-us-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -784,6 +799,11 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-hero-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .product-type-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -838,3 +858,4 @@ object {
               flex-direction: column; }
 
 /* About page */
+/* Store page */

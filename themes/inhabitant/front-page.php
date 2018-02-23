@@ -1,15 +1,12 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * @package RED_Starter_Theme
- */
+/* Template Name: Front-Page */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
+
+		<main id="main" class="site-main" role="main">
 
 <!-- Product terms -->
             <section class="product-info container">
