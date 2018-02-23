@@ -55,12 +55,18 @@ function front_hero_style() {
 	?>
 <?php
 	$image =  CFS()->get('hero_image');
-	$logo ?>= <?php get_template_directory_uri() .  '/images/logos/inhabitent-logo-full.svg'; ?>
+	$logo = get_template_directory_uri() .  '/images/logos/inhabitent-logo-full.svg';
+	
+	// d($logo);
+	?>
 <?php
 	$banner_css = ".page-template-default .site-header {
 		background:	
+
+		url({$logo}) no-repeat center center,
 		linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), 
-		url({$image}); no-repeat center bottom;
+		url({$image}) no-repeat center bottom;
+
 		background-size: 200px 200px, cover, cover;
 		height: 100vh;
 	}";

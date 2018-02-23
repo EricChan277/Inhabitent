@@ -26,8 +26,8 @@ get_header(); ?>
                                      alt="<?php echo $term->name; ?>"/>
                                 <p><?php echo $term->description; ?></p>
                                 <p>
-                                    <button href="<?php echo get_term_link( $term ); ?>"
-                                      class="btn"><?php echo $term->name; ?> Stuff</button>
+                                    <a href="<?php echo get_term_link( $term ); ?>"
+                                      class="btn"><?php echo $term->name; ?> Stuff</a>
                                 </p>
                             </div>
                         <?php endforeach; ?>
