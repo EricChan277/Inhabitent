@@ -60,7 +60,7 @@ function front_hero_style() {
 	// d($logo);
 	?>
 <?php
-	$banner_css = ".page-template-default .site-header {
+	$banner_css = ".page-id-24 .site-header {
 		background:	
 
 		url({$logo}) no-repeat center center,

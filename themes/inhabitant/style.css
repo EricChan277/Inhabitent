@@ -942,6 +942,10 @@ object {
   color: white;
   text-transform: uppercase; }
 
+.page-template-about h2 {
+  text-transform: uppercase; }
+
+/* Journal Archive Page */
 /* Store page */
 .post-type-archive-product a:link {
   text-decoration: none; }
@@ -1005,3 +1009,41 @@ object {
       height: 200px;
       width: 320px;
       margin: 0 5px; }
+
+/* Find Us Page */
+.page-id-73 .widget-area {
+  float: right;
+  right: 0px;
+  max-width: 413px;
+  position: absolute;
+  width: 30%;
+  text-align: left; }
+  .page-id-73 .widget-area svg {
+    margin-right: 5px; }
+  .page-id-73 .widget-area ul {
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px; }
+    .page-id-73 .widget-area ul li {
+      margin-top: .5rem;
+      margin-right: 5px; }
+    .page-id-73 .widget-area ul .media-icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+
+.page-id-73 .site-content {
+  display: block;
+  border-right: 1px solid #e1e1e1;
+  margin-right: 30%;
+  width: 70%; }

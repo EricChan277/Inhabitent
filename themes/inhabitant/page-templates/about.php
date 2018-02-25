@@ -15,8 +15,6 @@ get_header(); ?>
 		<div class= "banner">
 	<h1> About </h1>
 </div>
-
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
   </header><!-- .entry-header -->
 
 
@@ -45,8 +43,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 
-  <div class="sidebar-container" >
-    <?php get_sidebar(); ?> 
-  </div>
 
 <?php get_footer(); ?>
