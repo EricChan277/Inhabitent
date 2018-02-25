@@ -59,7 +59,6 @@
 
 .post-type-archive-product {
   .site-main {
-    // flex-direction: row;
     width: 100%;
     section {
       display:flex;
@@ -67,9 +66,13 @@
       width: 100%;
       justify-content: center;
       align-items: center;
+      type-product {
+        margin: 5px;
+      }
       img {
         height: 200px;
         width: 320px;
+        margin: 5px;
       }
         }
       }

@@ -26,11 +26,11 @@ get_header(); ?>
 			<?php if ( has_post_thumbnail() ) : ?>			
 			<?php the_post_thumbnail( 'medium' ); ?>
 			<?php endif; ?>
-			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-			<?php
-					$price =  CFS()->get( 'price' );
-					echo $price;
-				?>
+					<?php $price =  CFS()->get( 'price' );?>
+			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), "</a> " . $price . " </h2>"  );  ?>
+		
+	
+
 				<?php if ( 'post' === get_post_type() ) : ?>
 					<div class="entry-meta">
 						<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
