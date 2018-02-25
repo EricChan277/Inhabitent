@@ -4,51 +4,52 @@
 
 /* Front page */
 
-.front-hero-logo {
-  display: flex;
-}
+.page-template-default {
 
-.product-type-blocks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.product-type-block-wrapper {
-  width: 20%;
-  height: auto;
-  border: solid 1px #e1e1e1;
-  border-top-width: 10px;
-  p {
-    padding: 20px;
+  a:link {
+    text-decoration: none;
   }
-  button {
-    background-color: grey;
+  .front-hero-logo {
+    display: flex;
   }
-}
-
-.product-type-block-wrapper:hover {
-  border-color: #d99054;
-}
-
-.prod-type-img {
-  width: 100px;
-  height: 100px;
-  padding-top: 20px;
-}
-
-.journal-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  .journ-art {
-    width: 30%;
-    height: 15%;
+  .product-type-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .product-type-block-wrapper {
+    width: 20%;
+    height: auto;
     border: solid 1px #e1e1e1;
     border-top-width: 10px;
-    .entry-meta {
-      display: flex;
-      flex-direction: column;
+    p {
+      padding: 20px;
+    }
+    button {
+      background-color: grey;
+    }
+  }
+  .product-type-block-wrapper:hover {
+    border-color: #d99054;
+  }
+  .prod-type-img {
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+  }
+  .journal-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .journ-art {
+      width: 30%;
+      height: 15%;
+      border: solid 1px #e1e1e1;
+      border-top-width: 10px;
+      .entry-meta {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
@@ -58,22 +59,50 @@
 /* Store page */
 
 .post-type-archive-product {
+  a:link {
+    text-decoration: none;
+  }
+  
+  .product-type-blocks { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dashed #c8c8c8;
+    margin-bottom: 50px;
+
+    .product-page-types {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 100px;
+      text-transform: uppercase;
+      }
+    }
+  
+  
+  .entry-title {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    margin: 0 5px;
+  }
   .site-main {
     width: 100%;
-    section {
-      display:flex;
+    .product-listing {
+      display: flex;
       flex-flow: row wrap;
       width: 100%;
       justify-content: center;
       align-items: center;
       type-product {
-        margin: 5px;
+        margin: 0px 5px;
       }
       img {
         height: 200px;
         width: 320px;
-        margin: 5px;
-      }
-        }
+        margin: 0 5px;
       }
     }
+  }
+}

@@ -10,14 +10,33 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-				
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 
-				?>
+            <section class="product-info-container">
+                <h2>Shop Stuff</h2>
+                <?php
+                $terms = get_terms( array(
+                    'taxonomy'   => 'product_type',
+                    'hide_empty' => 0,
+                ) );
+                if ( ! empty( $terms ) ) :
+                    ?>
+                    <div class="product-type-blocks">
+                        <?php foreach ( $terms as $term ) :
+                            ?>
+                            <div class="product-page-types">
+                                    <a href="<?php echo get_term_link( $term ); ?>"
+                                      class="product-type-links"><?php echo $term->name; ?></a>
+                                </p>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+						</section>
+						
+
+
 			</header><!-- .page-header -->
-			<section>
+			<section class="product-listing">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

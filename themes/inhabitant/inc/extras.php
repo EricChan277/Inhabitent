@@ -49,12 +49,12 @@ function inhabitent_login_title() {
 
 function front_hero_style() {
 
-	if (! is_front_page()) {
+	if (! 'front-page.php') {
 		return;
 	}
 	?>
 <?php
-	$image =  CFS()->get('hero_image');
+	$image =  get_template_directory_uri() .  '/images/home-hero.jpg';
 	$logo = get_template_directory_uri() .  '/images/logos/inhabitent-logo-full.svg';
 	
 	// d($logo);

@@ -799,12 +799,15 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.front-hero-logo {
+.page-template-default a:link {
+  text-decoration: none; }
+
+.page-template-default .front-hero-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.product-type-blocks {
+.page-template-default .product-type-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,25 +818,25 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-.product-type-block-wrapper {
+.page-template-default .product-type-block-wrapper {
   width: 20%;
   height: auto;
   border: solid 1px #e1e1e1;
   border-top-width: 10px; }
-  .product-type-block-wrapper p {
+  .page-template-default .product-type-block-wrapper p {
     padding: 20px; }
-  .product-type-block-wrapper button {
+  .page-template-default .product-type-block-wrapper button {
     background-color: grey; }
 
-.product-type-block-wrapper:hover {
+.page-template-default .product-type-block-wrapper:hover {
   border-color: #d99054; }
 
-.prod-type-img {
+.page-template-default .prod-type-img {
   width: 100px;
   height: 100px;
   padding-top: 20px; }
 
-.journal-list {
+.page-template-default .journal-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,12 +846,12 @@ object {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  .journal-list .journ-art {
+  .page-template-default .journal-list .journ-art {
     width: 30%;
     height: 15%;
     border: solid 1px #e1e1e1;
     border-top-width: 10px; }
-    .journal-list .journ-art .entry-meta {
+    .page-template-default .journal-list .journ-art .entry-meta {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -859,9 +862,47 @@ object {
 
 /* About page */
 /* Store page */
+.post-type-archive-product a:link {
+  text-decoration: none; }
+
+.post-type-archive-product .product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 50px; }
+  .post-type-archive-product .product-type-blocks .product-page-types {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+    width: 100px;
+    text-transform: uppercase; }
+
+.post-type-archive-product .entry-title {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  margin: 0 5px; }
+
 .post-type-archive-product .site-main {
   width: 100%; }
-  .post-type-archive-product .site-main section {
+  .post-type-archive-product .site-main .product-listing {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -876,9 +917,9 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .post-type-archive-product .site-main section type-product {
-      margin: 5px; }
-    .post-type-archive-product .site-main section img {
+    .post-type-archive-product .site-main .product-listing type-product {
+      margin: 0px 5px; }
+    .post-type-archive-product .site-main .product-listing img {
       height: 200px;
       width: 320px;
-      margin: 5px; }
+      margin: 0 5px; }
