@@ -11,7 +11,6 @@ textarea {
 	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
-
 }
 
 body {
@@ -20,12 +19,17 @@ body {
 	align-items: center;
 	flex-direction: row;
 	width: 100%;
-	text-align: center;
-	// background-color: 
+	text-align: center; // background-color: 
 }
+
 /* Headings */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	clear: both;
 }
 
@@ -35,7 +39,10 @@ p {
 	margin-bottom: $base__space-unit;
 }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
 	font-style: italic;
 }
 
@@ -58,17 +65,22 @@ pre {
 	padding: 1.6rem;
 }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
 	font-family: $font__code;
 	@include font-size(0.9375);
 }
 
-abbr, acronym {
+abbr,
+acronym {
 	border-bottom: 1px dotted $color__border-abbr;
 	cursor: help;
 }
 
-mark, ins {
+mark,
+ins {
 	background: $color__background-ins;
 	text-decoration: none;
 }
@@ -81,11 +93,9 @@ footer {
 	color: white;
 	text-align: left;
 	font-size: 1.25rem;
-	
 	svg {
 		margin-right: 5px;
 	}
-
 	.copyright-footer {
 		display: flex;
 		align-items: flex-end;
@@ -96,43 +106,55 @@ footer {
 		margin: .5rem 0 0 0;
 	}
 	#footer-sidebar1,
-	#footer-sidebar2,
-	#footer-sidebar3 {
+	#footer-sidebar2 {
 		height: 190px;
-
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 5px;
 	}
-
-	ul{
+	ul {
 		list-style: none;
 		margin-left: 0px;
 		padding-left: 0px;
-		
-		li{
+		li {
 			margin-top: .5rem;
 			margin-right: 5px;
-			
 		}
-
-		.media-icons { 
+		.media-icons {
 			display: flex;
 			flex-direction: row;
 		}
 	}
 	.widget-title {
+		text-transform: uppercase;
 		color: #d99054;
+		margin: 0px;
 	}
-
 	.footer-logo {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 		align-items: center;
 		height: 100%;
-		img{
-			width: 280px;
-			height: 50px;
+		img {
+			min-width: 280px;
+			min-height: 50px;
 		}
 	}
 }
 
+.blog {
+	.widget-area {
+		float: right;
+		right: 0px;
+		max-width: 413px;
+		position: absolute;
+		width: 30%;
+	}
+	.site-content {
+		display: block;
 
-
+		margin-right: 30%;
+		width: 70%;
+	}
+}

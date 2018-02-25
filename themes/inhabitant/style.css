@@ -257,14 +257,22 @@ body {
   text-align: center; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -284,16 +292,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -320,9 +333,18 @@ footer {
   footer p {
     margin: .5rem 0 0 0; }
   footer #footer-sidebar1,
-  footer #footer-sidebar2,
-  footer #footer-sidebar3 {
-    height: 190px; }
+  footer #footer-sidebar2 {
+    height: 190px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5px; }
   footer ul {
     list-style: none;
     margin-left: 0px;
@@ -339,21 +361,35 @@ footer {
           -ms-flex-direction: row;
               flex-direction: row; }
   footer .widget-title {
-    color: #d99054; }
+    text-transform: uppercase;
+    color: #d99054;
+    margin: 0px; }
   footer .footer-logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     height: 100%; }
     footer .footer-logo img {
-      width: 280px;
-      height: 50px; }
+      min-width: 280px;
+      min-height: 50px; }
+
+.blog .widget-area {
+  float: right;
+  right: 0px;
+  max-width: 413px;
+  position: absolute;
+  width: 30%; }
+
+.blog .site-content {
+  display: block;
+  margin-right: 30%;
+  width: 70%; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -880,7 +916,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px dashed #c8c8c8;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  text-transform: uppercase; }
   .post-type-archive-product .product-type-blocks .product-page-types {
     display: -webkit-box;
     display: -ms-flexbox;

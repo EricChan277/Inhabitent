@@ -12,7 +12,7 @@ get_header(); ?>
 			<header class="page-header">
 
             <section class="product-info-container">
-                <h2>Shop Stuff</h2>
+                <h1>Shop Stuff</h1>
                 <?php
                 $terms = get_terms( array(
                     'taxonomy'   => 'product_type',
@@ -76,5 +76,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
