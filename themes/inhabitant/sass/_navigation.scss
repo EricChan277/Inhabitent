@@ -86,7 +86,7 @@ a {
 		}
 	}
 	a {
-		color:red;
+		color: black;
 		display: block;
 		text-decoration: none;
 	}
@@ -145,7 +145,16 @@ a {
 	border-bottom: black;
 	position: fixed;
 	opacity: .5;
+
+	.tent-home {
+		background: url('../../images/logos/inhabitent-logo-tent.svg');
+		background-repeat: no-repeat;
+	}
+	.primary-menu {
+		opacity: 1;
+	}
 	li{
 			margin: 0px 10px;
+
 		}
 }

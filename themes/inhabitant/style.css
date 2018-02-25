@@ -597,7 +597,7 @@ a {
     float: left;
     position: relative; }
   .main-navigation a {
-    color: red;
+    color: black;
     display: block;
     text-decoration: none; }
 
@@ -648,6 +648,11 @@ a {
   border-bottom: black;
   position: fixed;
   opacity: .5; }
+  .menu-menu-1-container .tent-home {
+    background: url("../../images/logos/inhabitent-logo-tent.svg");
+    background-repeat: no-repeat; }
+  .menu-menu-1-container .primary-menu {
+    opacity: 1; }
   .menu-menu-1-container li {
     margin: 0px 10px; }
 
