@@ -12,13 +12,14 @@ get_header(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
+		<div class= "banner">
+	<h1> About </h1>
+</div>
+
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
   </header><!-- .entry-header -->
 
-<div class= "banner">
-	<h1> About </h1> 
-	
-<div>
+
 
 	<div class="entry-content">
 		<?php the_content(); ?>

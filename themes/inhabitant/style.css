@@ -935,6 +935,13 @@ object {
               flex-direction: column; }
 
 /* About page */
+.page-template-about .banner {
+  position: absolute;
+  top: 40%;
+  right: 47%;
+  color: white;
+  text-transform: uppercase; }
+
 /* Store page */
 .post-type-archive-product a:link {
   text-decoration: none; }
