@@ -11,7 +11,6 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -25,7 +24,7 @@ get_header(); ?>
               <?php if ( has_post_thumbnail() ) : ?>
                 <?php the_post_thumbnail( 'large' ); ?>
               <?php endif; ?>
-          
+          <section class= "product-info">
               <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
           
               <div class="entry-meta">
@@ -39,14 +38,16 @@ get_header(); ?>
             <?php echo CFS()->get( 'price' ); ?>
             
               <?php the_content(); ?>
-              <?php
+
+           <?php
                 wp_link_pages( array(
                   'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
                   'after'  => '</div>',
                 ) );
               ?>
             </div><!-- .entry-content -->
-          
+            </section>
+            <!--section ending -->
             <footer class="entry-footer">
               <?php red_starter_entry_footer(); ?>
             </footer><!-- .entry-footer -->
@@ -66,6 +67,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
 

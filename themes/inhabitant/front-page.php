@@ -80,6 +80,35 @@ get_header(); ?>
       <h2>Nothing found!</h2>
 <?php endif; ?>
 
+<section class="adventures">
+    <h1> Latest Adventures </h1>
+
+    <article class="adventure-container">
+        <div class="canoe-adv">
+            canoe
+        </div>
+       
+       <div class="triple-adv-wrapper">
+          
+            <div class="beach-adv">
+                beach
+            </div>
+            
+            <div class="sky-mountain-wrapper">
+                <div class="mountain-adv">
+                    mountain
+                </div>
+                <div class="sky-adv">
+                    sky
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <a class="adventure-more"> More Adventures </a>
+
+</section>
+
 
 </main><!-- #main -->
 	</div><!-- #primary -->

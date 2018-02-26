@@ -51,6 +51,66 @@
       }
     }
   }
+  .adventure-container {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-wrap: wrap;
+    .canoe-adv {
+      background: url('../../images/adventure-photos/canoe-girl.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 100%;
+      // margin-right: 5px;
+
+    }
+    .triple-adv-wrapper {
+      flex-direction: column;
+      margin: 15px;
+      height:100%;
+      width:50%;
+      .beach-adv {
+        background: url('../../images/adventure-photos/beach-bonfire.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 48%;
+        margin: 10px;
+        margin-top: 0px;
+      }
+      .sky-mountain-wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 50%;
+     
+
+        .mountain-adv {
+          background: url('../../images/adventure-photos/mountain-hikers.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: auto;
+          margin: 10px;
+          margin-bottom: 0px;
+        }
+        .sky-adv {
+          background: url('../../images/adventure-photos/night-sky.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: auto;
+          margin: 10px;
+          margin-bottom: 0px;
+        }
+      }
+      // .adventure-more {
+      //   display: block;
+      // }
+    }
+  }
 }
 
 /* About page */
@@ -70,7 +130,41 @@
 
 /* Journal Archive Page */
 
-// .blog {}
+.blog {
+  .widget-area {
+    float: right;
+    right: 0px;
+    max-width: 413px;
+    position: absolute;
+    width: 30%;
+    text-align: left;
+    svg {
+      margin-right: 5px;
+    }
+    ul {
+      list-style: none;
+      margin-left: 0px;
+      padding-left: 0px;
+      li {
+        margin-top: .5rem;
+        margin-right: 5px;
+      }
+      .media-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .site-content {
+    display: block;
+    border-right: 1px solid #e1e1e1;
+    margin-right: 30%;
+    width: 70%;
+  }
+}
+
 /* Store page */
 
 .post-type-archive-product {
@@ -119,11 +213,21 @@
   }
 }
 
+/* Individual Products */
+
+.single-product {
+  .entry-header {
+    display: flex;
+  }
+  .product-info {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 /* Find Us Page */
 
 .page-id-73 {
-
-
   .widget-area {
     float: right;
     right: 0px;
@@ -131,7 +235,6 @@
     position: absolute;
     width: 30%;
     text-align: left;
-
     svg {
       margin-right: 5px;
     }
@@ -145,9 +248,6 @@
       }
     }
   }
-  // .wpcf7 {
-
-  // }
   .site-content {
     padding-top: 50px;
     display: block;
@@ -157,3 +257,29 @@
     border-right: 1px solid #e1e1e1;
   }
 }
+
+/* Search Page */
+
+// .page-template-search {
+//   padding: none; 
+//   .widget-area {
+//     float: right;
+//     right: 0px;
+//     max-width: 413px;
+//     position: absolute;
+//     width: 30%;
+//     text-align: left;
+//     svg {
+//       margin-right: 5px;
+//     }
+//     ul {
+//       list-style: none;
+//       margin-left: 0px;
+//       padding-left: 0px;
+//       li {
+//         margin-top: .5rem;
+//         margin-right: 5px;
+//       }
+//     }
+//   }
+// }
