@@ -24,9 +24,16 @@
     p {
       padding: 20px;
     }
-    button {
-      background-color: grey;
+    a {
+      padding: 10px 30px;
+      background-color: #a1a1a1;
+      color: white;
+
     }
+    a:hover {
+      background-color: #808080;
+    }
+  
   }
   .product-type-block-wrapper:hover {
     border-color: #d99054;

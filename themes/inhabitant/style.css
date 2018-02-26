@@ -864,8 +864,12 @@ object {
   border-top-width: 10px; }
   .page-template-default .product-type-block-wrapper p {
     padding: 20px; }
-  .page-template-default .product-type-block-wrapper button {
-    background-color: grey; }
+  .page-template-default .product-type-block-wrapper a {
+    padding: 10px 30px;
+    background-color: #a1a1a1;
+    color: white; }
+  .page-template-default .product-type-block-wrapper a:hover {
+    background-color: #808080; }
 
 .page-template-default .product-type-block-wrapper:hover {
   border-color: #d99054; }
