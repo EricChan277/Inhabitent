@@ -57,13 +57,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // flex-wrap: wrap;
+    font-size: 2.5rem;
+    color: white;
+
     .canoe-adv {
       background: url('../../images/adventure-photos/canoe-girl.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       width: 50%;
       height: 100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
       // margin-right: 5px;
 
     }
@@ -80,6 +87,10 @@
         height: 48%;
         margin: 10px;
         margin-top: 0px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
       .sky-mountain-wrapper {
         display: flex;
@@ -95,6 +106,11 @@
           height: auto;
           margin: 10px;
           margin-bottom: 0px;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
         }
         .sky-adv {
           background: url('../../images/adventure-photos/night-sky.jpg');
@@ -104,6 +120,10 @@
           height: auto;
           margin: 10px;
           margin-bottom: 0px;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
         }
       }
       // .adventure-more {

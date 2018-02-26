@@ -85,21 +85,25 @@ get_header(); ?>
 
     <article class="adventure-container">
         <div class="canoe-adv">
-            canoe
+           <span> Getting Back to Nature in a Canoe </span>
+            <a> Read More </a>
         </div>
        
        <div class="triple-adv-wrapper">
           
             <div class="beach-adv">
-                beach
+             <span>A Night with Friends at the beach</span>
+                <a> Read More </a>
             </div>
             
             <div class="sky-mountain-wrapper">
                 <div class="mountain-adv">
-                    mountain
+                <span>Taking in the View at Big mountain</span>
+                    <a> Read More </a>
                 </div>
                 <div class="sky-adv">
-                    sky
+                    <span>Star-Gazing at the Night Sky</span>
+                    <a> Read More </a>
                 </div>
             </div>
         </div>
