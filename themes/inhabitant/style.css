@@ -607,15 +607,16 @@ a {
   width: 100vw;
   height: 50px;
   margin-right: 50px;
-  background: #a1a1a1;
+  background: rgba(255, 255, 255, 0.85);
   border-bottom: black;
-  position: fixed;
-  opacity: .5; }
-  .main-navigation .tent-home {
-    background: url("../../images/logos/inhabitent-logo-tent.svg");
-    background-repeat: no-repeat; }
-  .main-navigation .primary-menu {
-    opacity: 1; }
+  position: fixed; }
+  .main-navigation .tent-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding-right: 10px; }
   .main-navigation li {
     margin: 0px 10px; }
   .main-navigation .search-form {
@@ -1131,19 +1132,32 @@ object {
       margin: 0 5px; }
 
 /* Individual Products */
-.single-product .entry-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.single-product .product-info {
+.single-product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left; }
+  .single-product .product-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .single-product .entry-content {
+    width: 45%;
+    height: auto; }
+  .single-product .price-text {
+    font-size: 2.5rem; }
+  .single-product .entry-title {
+    color: #d99054;
+    text-transform: uppercase; }
 
 /* Find Us Page */
 .page-id-73 .widget-area {
