@@ -71,7 +71,14 @@ function front_hero_style() {
 		height: 100vh;
 	}";
 
-
+	add_filter( 'get_the_archive_title', function ( $title ) {
+		if( is_post_type_archive('product') ) {
+				//  $title = 'shop-stuff';
+		} else if ( is_tax ('product_type')) {
+				 $title = sprintf('%1$s', single_term_title('', false) ); 
+		 }
+		return $title;
+ });
 
 	wp_add_inline_style ('inhabitent-style', $banner_css);
 }
@@ -100,3 +107,10 @@ function hero_style() {
 add_action( 'wp_enqueue_scripts', 'front_hero_style');
 add_action( 'wp_enqueue_scripts', 'hero_style');
 
+// add_filter( 'get_the_archive_title', function ( $title ) {
+
+// 	if( is_post_type_archive('product') ) {
+		
+// 	}else if(is_tax ('product_type')) {
+// 		$title = '$title'
+// 	});
