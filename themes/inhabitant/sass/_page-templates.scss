@@ -168,7 +168,7 @@
 /* Journal Archive Page */
 
 .blog {
-
+  width: 100vw;
   .entry-header {
     position: relative;
   }
@@ -181,6 +181,9 @@
     text-align: left;
     padding-left: 10px;
     padding-right: 5px;
+    a:hover {
+      color:#f0e4d1;
+    }
 
       a {
         color: white;
@@ -235,6 +238,16 @@
     width: 70%;
   }
 }
+
+/* Single Journal Page*/
+.single-post {
+
+
+}
+
+
+
+
 
 /* Store page */
 
@@ -410,6 +423,7 @@
 //     }
 //   }
 // }
+
 
 
 /* 404 Page */
