@@ -329,6 +329,27 @@
   .content-area {
     padding-top: 50px;
   }
+  .read-more {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    width: 52%;
+    a {
+      border: 1px solid black;
+      font-size: 1rem;
+      color: black;
+      padding: 5px;
+      text-decoration: none;
+    }
+    a:hover {
+      color: white;
+      background-color: #808080;
+      border: 1px solid white;
+    }
+  }
 }
 
 /* Single Journal Page*/

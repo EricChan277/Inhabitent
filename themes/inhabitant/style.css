@@ -1210,6 +1210,30 @@ object {
     width: 70%; }
   .blog .content-area {
     padding-top: 50px; }
+  .blog .read-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    width: 52%; }
+    .blog .read-more a {
+      border: 1px solid black;
+      font-size: 1rem;
+      color: black;
+      padding: 5px;
+      text-decoration: none; }
+    .blog .read-more a:hover {
+      color: white;
+      background-color: #808080;
+      border: 1px solid white; }
 
 /* Single Journal Page*/
 .single-post {
