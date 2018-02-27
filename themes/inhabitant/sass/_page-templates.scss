@@ -47,87 +47,107 @@
     justify-content: space-around;
     .journ-art {
       width: 30%;
-      height: 15%;
+      height: 550px;
       border: solid 1px #e1e1e1;
-      border-top-width: 10px;
       .entry-meta {
         display: flex;
         flex-direction: column;
-      }
+        border-top: solid 1px #e1e1e1;
+        border-top-width: 5px;
+        text-decoration-style: none;
+        color: black;
+        .blog-button {
+          border: 1px solid black;
+          padding: 10px;
+          width: 30%;
+          margin: 20px;
+          text-transform: uppercase;
+          text-decoration-style: none;
+          color: black;
+        }
+        .blog-button:hover {
+          color: white;
+          background-color: #808080;
+          border: none;
+        }
+      
     }
   }
-  .adventure-container {
-    width: 100vw;
-    height: 600px;
+}
+
+.adventure-container {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: white;
+  .canoe-adv {
+    background: url('../../images/adventure-photos/canoe-girl.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
-    color: white;
-    .canoe-adv {
-      background: url('../../images/adventure-photos/canoe-girl.jpg');
+    flex-direction: column; // margin-right: 5px;
+  }
+  .triple-adv-wrapper {
+    flex-direction: column;
+    margin: 15px;
+    height: 100%;
+    width: 50%;
+    .beach-adv {
+      background: url('../../images/adventure-photos/beach-bonfire.jpg');
       background-size: cover;
       background-repeat: no-repeat;
-      width: 50%;
-      height: 100%;
+      width: 100%;
+      height: 48%;
+      margin: 10px;
+      margin-top: 0px;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column; // margin-right: 5px;
-    }
-    .triple-adv-wrapper {
       flex-direction: column;
-      margin: 15px;
-      height: 100%;
-      width: 50%;
-      .beach-adv {
-        background: url('../../images/adventure-photos/beach-bonfire.jpg');
+    }
+    .sky-mountain-wrapper {
+      display: flex;
+      flex-direction: row;
+      height: 50%;
+      .mountain-adv {
+        background: url('../../images/adventure-photos/mountain-hikers.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 48%;
+        height: auto;
         margin: 10px;
-        margin-top: 0px;
+        margin-bottom: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
       }
-      .sky-mountain-wrapper {
+      .sky-adv {
+        background: url('../../images/adventure-photos/night-sky.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        margin-bottom: 0px;
         display: flex;
-        flex-direction: row;
-        height: 50%;
-        .mountain-adv {
-          background: url('../../images/adventure-photos/mountain-hikers.jpg');
-          background-size: cover;
-          background-repeat: no-repeat;
-          width: 100%;
-          height: auto;
-          margin: 10px;
-          margin-bottom: 0px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-        }
-        .sky-adv {
-          background: url('../../images/adventure-photos/night-sky.jpg');
-          background-size: cover;
-          background-repeat: no-repeat;
-          width: 100%;
-          height: auto;
-          margin: 10px;
-          margin-bottom: 0px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-        }
-      } // .adventure-more {
-      //   display: block;
-      // }
-    }
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    } // .adventure-more {
+    //   display: block;
+    // }
   }
+}
+
 }
 
 /* About page */
@@ -148,6 +168,29 @@
 /* Journal Archive Page */
 
 .blog {
+
+  .entry-header {
+    position: relative;
+  }
+  .entry-title {
+    position: absolute;
+    top: 20px;
+    left: 20.2%;
+    background: #248A83;
+    width: 42%;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 5px;
+
+      a {
+        color: white;
+        text-decoration:  none;
+        text-transform: uppercase;
+        font-size:2rem;
+        text-decoration-style: none;
+
+      }
+  } 
   .widget-area {
     float: right;
     right: 0px;
@@ -356,6 +399,8 @@
 //     }
 //   }
 // }
+
+
 /* 404 Page */
 
 .error404 {

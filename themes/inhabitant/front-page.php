@@ -65,8 +65,9 @@ get_header(); ?>
                     </div>
                 <h2>
                 <a href="<?php the_permalink(); ?>"> <?php the_title();?></a>
-                </h2>  
-                <button href="<?php the_permalink(); ?>">Read Entry</button>
+                
+            </h2>  
+                <a class="blog-button" href="<?php the_permalink(); ?>">Read Entry</a>
                 </div><!-- .entry-meta -->
             </article>
 
