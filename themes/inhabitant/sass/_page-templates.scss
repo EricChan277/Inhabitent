@@ -28,12 +28,10 @@
       padding: 10px 30px;
       background-color: #a1a1a1;
       color: white;
-
     }
     a:hover {
       background-color: #808080;
     }
-  
   }
   .product-type-block-wrapper:hover {
     border-color: #d99054;
@@ -66,26 +64,22 @@
     align-items: center;
     font-size: 2.5rem;
     color: white;
-
     .canoe-adv {
       background: url('../../images/adventure-photos/canoe-girl.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       width: 50%;
       height: 100%;
-      display:flex;
+      display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-
-      // margin-right: 5px;
-
+      flex-direction: column; // margin-right: 5px;
     }
     .triple-adv-wrapper {
       flex-direction: column;
       margin: 15px;
-      height:100%;
-      width:50%;
+      height: 100%;
+      width: 50%;
       .beach-adv {
         background: url('../../images/adventure-photos/beach-bonfire.jpg');
         background-size: cover;
@@ -94,7 +88,7 @@
         height: 48%;
         margin: 10px;
         margin-top: 0px;
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -103,8 +97,6 @@
         display: flex;
         flex-direction: row;
         height: 50%;
-     
-
         .mountain-adv {
           background: url('../../images/adventure-photos/mountain-hikers.jpg');
           background-size: cover;
@@ -113,11 +105,10 @@
           height: auto;
           margin: 10px;
           margin-bottom: 0px;
-          display:flex;
+          display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-
         }
         .sky-adv {
           background: url('../../images/adventure-photos/night-sky.jpg');
@@ -127,13 +118,12 @@
           height: auto;
           margin: 10px;
           margin-bottom: 0px;
-          display:flex;
+          display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
         }
-      }
-      // .adventure-more {
+      } // .adventure-more {
       //   display: block;
       // }
     }
@@ -198,6 +188,37 @@
   a:link {
     text-decoration: none;
   }
+
+  .elipses {
+    margin-top: -24px;
+    z-index: 1;
+  }
+  
+  .product-meta-box {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    margin: 0 5px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    
+      .entry-title {
+        text-transform: none;
+      }
+
+      .prod-title {
+        padding: 0px;
+        margin: 0px;
+        background: white;
+        z-index: 5;
+      }
+      .price {
+        background: white;
+        z-index: 5;
+      }
+  }
   .product-type-blocks {
     display: flex;
     flex-direction: row;
@@ -214,11 +235,6 @@
       width: 100px;
       text-transform: uppercase;
     }
-  }
-  .entry-title {
-    border: 1px solid #e1e1e1;
-    border-top-width: 5px;
-    margin: 0 5px;
   }
   .site-main {
     width: 100%;
@@ -243,7 +259,7 @@
 /* Individual Products */
 
 .single-product {
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   text-align: left;
@@ -257,7 +273,7 @@
   .entry-content {
     width: 45%;
     height: auto;
-    a { 
+    a {
       border: 1px solid black;
       padding: 10px 25px;
       margin: 5px;
@@ -272,7 +288,7 @@
   .price-text {
     font-size: 2.5rem;
   }
-  .entry-title{
+  .entry-title {
     color: #d99054;
     text-transform: uppercase;
   }
@@ -336,21 +352,20 @@
 //     }
 //   }
 // }
-
 /* 404 Page */
 
 .error404 {
   width: 100%;
-  li{
+  li {
     list-style-type: none;
   }
   .widget_categories,
   .widget_recent_entries {
-    ul{
+    ul {
       list-style-type: none;
       padding: 0;
       margin-left: 0;
-      li{
+      li {
         a:link {
           text-transform: capitalize;
           text-decoration: none;
@@ -358,7 +373,6 @@
       }
     }
   }
-  
   .widget-area {
     float: right;
     right: 0px;

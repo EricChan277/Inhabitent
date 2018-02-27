@@ -43,21 +43,28 @@ get_header(); ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>
 						<header class="entry-header">
 			<?php if ( has_post_thumbnail() ) : ?>		
-				<?php esc_url(get_permalink()) ?>
-				<?php the_post_thumbnail( 'medium' ); ?>
+					
+			<a href="<?php get_permalink();?>"> 
+				<?php the_post_thumbnail('medium'); ?>
+			</a>
+			
 			<?php endif; ?>
 					<?php $price =  CFS()->get( 'price' );?>
-			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), "</a> " . $price . " </h2>"  );  ?>
-	
+					<div class="product-meta-box">
 
-				<?php if ( 'post' === get_post_type() ) : ?>
-					<div class="entry-meta">
-						<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-					</div><!-- .entry-meta -->
-						<?php endif; ?>
+
+						<?php the_title('<p class="prod-title">', '</p>') ?>
+						<?php echo '<span class="price">'. $price . '</span>'?> 
+					
+
+					</div>
+					<p class="elipses">.........................................</p>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
+
+
+
 
 	
 					</div><!-- .entry-content -->
