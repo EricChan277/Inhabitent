@@ -1143,6 +1143,8 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: left; }
+  .single-product a {
+    text-decoration: none; }
   .single-product .product-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1153,6 +1155,15 @@ object {
   .single-product .entry-content {
     width: 45%;
     height: auto; }
+    .single-product .entry-content a {
+      border: 1px solid black;
+      padding: 10px 25px;
+      margin: 5px;
+      text-transform: uppercase; }
+    .single-product .entry-content svg {
+      margin-right: 5px;
+      width: 20px;
+      height: 20px; }
   .single-product .price-text {
     font-size: 2.5rem; }
   .single-product .entry-title {

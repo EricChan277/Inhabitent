@@ -59,6 +59,7 @@ get_header(); ?>
 
 					<div class="entry-content">
 
+	
 					</div><!-- .entry-content -->
 					</article><!-- #post-## -->
 

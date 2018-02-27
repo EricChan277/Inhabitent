@@ -38,8 +38,12 @@ get_header(); ?>
                     <article class="individual-product-info">
                     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                     <?php echo '<b><p class="price-text">' . $price . '</p></b>'?>
-
                       <?php the_content(); ?>
+                      <div class="social-buttons">
+     <a class= "prod-media" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>Like</a>
+     <a class= "prod-media" href="https://twitter.com/?lang=en"><i class="fab fa-twitter" aria-hidden="true"></i>Twitter</a>
+     <a class= "prod-media" href="https://www.pinterest.ca/"><i class="fab fa-pinterest" aria-hidden="true"></i>Pin</a>
+   </div>
                       </article>
       
                   <?php
