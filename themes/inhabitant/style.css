@@ -942,10 +942,10 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2.5rem;
   color: white; }
   .page-template-default .adventure-container .canoe-adv {
-    background: url("../../images/adventure-photos/canoe-girl.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/canoe-girl.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/canoe-girl.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
@@ -953,16 +953,22 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    padding: 5%;
+    font-size: 3rem; }
+    .page-template-default .adventure-container .canoe-adv a {
+      margin-top: 20px;
+      width: 30%;
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white; }
   .page-template-default .adventure-container .triple-adv-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -972,7 +978,8 @@ object {
     height: 100%;
     width: 50%; }
     .page-template-default .adventure-container .triple-adv-wrapper .beach-adv {
-      background: url("../../images/adventure-photos/beach-bonfire.jpg");
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/beach-bonfire.jpg");
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/beach-bonfire.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
@@ -982,9 +989,9 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -1002,7 +1009,8 @@ object {
               flex-direction: row;
       height: 50%; }
       .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv {
-        background: url("../../images/adventure-photos/mountain-hikers.jpg");
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/mountain-hikers.jpg");
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/mountain-hikers.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -1012,9 +1020,9 @@ object {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -1023,7 +1031,8 @@ object {
             -ms-flex-direction: column;
                 flex-direction: column; }
       .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv {
-        background: url("../../images/adventure-photos/night-sky.jpg");
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/night-sky.jpg");
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -1033,9 +1042,9 @@ object {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
