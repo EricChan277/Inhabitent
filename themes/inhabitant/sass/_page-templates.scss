@@ -188,12 +188,10 @@
   a:link {
     text-decoration: none;
   }
-
   .elipses {
     margin-top: -24px;
     z-index: 1;
   }
-  
   .product-meta-box {
     display: flex;
     flex-direction: row;
@@ -203,21 +201,19 @@
     justify-content: space-around;
     align-items: center;
     z-index: 2;
-    
-      .entry-title {
-        text-transform: none;
-      }
-
-      .prod-title {
-        padding: 0px;
-        margin: 0px;
-        background: white;
-        z-index: 5;
-      }
-      .price {
-        background: white;
-        z-index: 5;
-      }
+    .entry-title {
+      text-transform: none;
+    }
+    .prod-title {
+      padding: 0px;
+      margin: 0px;
+      background: white;
+      z-index: 5;
+    }
+    .price {
+      background: white;
+      z-index: 5;
+    }
   }
   .product-type-blocks {
     display: flex;
@@ -279,19 +275,27 @@
       margin: 5px;
       text-transform: uppercase;
     }
-    svg {
-      margin-right: 5px;
-      width: 20px;
-      height: 20px;
+    a:hover {
+      color: white;
+      background: #808080;
+      border: none;
     }
+  svg {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
   }
-  .price-text {
-    font-size: 2.5rem;
-  }
-  .entry-title {
-    color: #d99054;
-    text-transform: uppercase;
-  }
+}
+
+.price-text {
+  font-size: 2.5rem;
+}
+
+.entry-title {
+  color: #d99054;
+  text-transform: uppercase;
+}
+
 }
 
 /* Find Us Page */

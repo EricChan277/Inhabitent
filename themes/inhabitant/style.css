@@ -1195,6 +1195,10 @@ object {
       padding: 10px 25px;
       margin: 5px;
       text-transform: uppercase; }
+    .single-product .entry-content a:hover {
+      color: white;
+      background: #808080;
+      border: none; }
     .single-product .entry-content svg {
       margin-right: 5px;
       width: 20px;
