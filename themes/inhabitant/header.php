@@ -28,13 +28,16 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="tent-logo" src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg"/></a>		<?php wp_nav_menu( array(  'theme_location' => 'primary',  'menu_id' => 'primary-menu' ) ); ?>
-	
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="tent-logo" src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg"/></a>	
+				
+				<div class="nav-search">
+					
+				<?php wp_nav_menu( array(  'theme_location' => 'primary',  'menu_id' => 'primary-menu' ) ); ?>
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 				
 
 					<?php get_search_form(); ?>
-
+				</div>
 					
 				</nav><!-- #site-navigation -->
 
