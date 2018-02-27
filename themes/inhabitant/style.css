@@ -1597,6 +1597,7 @@ object {
     padding-top: 50px;
     display: block;
     width: 70%;
+    min-height: 100vh;
     text-align: left;
     padding-left: 200px;
     border-right: 1px solid #e1e1e1; }

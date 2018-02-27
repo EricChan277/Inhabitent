@@ -40,25 +40,4 @@
   }
 })();
 
-(function($){
-  $('.main-navigation .search-field').hide();
- 
-  $('.main-navigation .icon-search').on('click', function(evt){
-    evt.preventDefault();
- 
-    $('.main-navigation .search-field').show('fast');
-    $('.main-navigation .search-field').focus();
-    
-  });
- 
-  $('.main-navigation .search-field').on('blur', function(){
- 
-    $('.main-navigation .search-field').hide('fast');
-  });
-  
-  $('.search-field').keydown(function(enter) {
-    $('.search-field').submit();
-  })
- 
- }(jQuery));
 
