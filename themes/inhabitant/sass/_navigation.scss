@@ -126,6 +126,7 @@ a {
 	background: hsla(0,0%,100%,.85);
 	border-bottom: black;
 	position: fixed;
+	z-index: 10;
 
 	.tent-logo {
 		display: flex;

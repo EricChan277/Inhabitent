@@ -617,7 +617,8 @@ a {
   padding-right: 50px;
   background: rgba(255, 255, 255, 0.85);
   border-bottom: black;
-  position: fixed; }
+  position: fixed;
+  z-index: 10; }
   .main-navigation .tent-logo {
     display: -webkit-box;
     display: -ms-flexbox;
