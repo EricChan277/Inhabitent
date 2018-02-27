@@ -70,84 +70,81 @@
           background-color: #808080;
           border: none;
         }
-      
+      }
     }
   }
-}
-
-.adventure-container {
-  width: 100vw;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  color: white;
-  .canoe-adv {
-    background: url('../../images/adventure-photos/canoe-girl.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 100%;
+  .adventure-container {
+    width: 100vw;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; // margin-right: 5px;
-  }
-  .triple-adv-wrapper {
-    flex-direction: column;
-    margin: 15px;
-    height: 100%;
-    width: 50%;
-    .beach-adv {
-      background: url('../../images/adventure-photos/beach-bonfire.jpg');
+    font-size: 2.5rem;
+    color: white;
+    .canoe-adv {
+      background: url('../../images/adventure-photos/canoe-girl.jpg');
       background-size: cover;
       background-repeat: no-repeat;
-      width: 100%;
-      height: 48%;
-      margin: 10px;
-      margin-top: 0px;
+      width: 50%;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      flex-direction: column; // margin-right: 5px;
     }
-    .sky-mountain-wrapper {
-      display: flex;
-      flex-direction: row;
-      height: 50%;
-      .mountain-adv {
-        background: url('../../images/adventure-photos/mountain-hikers.jpg');
+    .triple-adv-wrapper {
+      flex-direction: column;
+      margin: 15px;
+      height: 100%;
+      width: 50%;
+      .beach-adv {
+        background: url('../../images/adventure-photos/beach-bonfire.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: auto;
+        height: 48%;
         margin: 10px;
-        margin-bottom: 0px;
+        margin-top: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
       }
-      .sky-adv {
-        background: url('../../images/adventure-photos/night-sky.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: auto;
-        margin: 10px;
-        margin-bottom: 0px;
+      .sky-mountain-wrapper {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-    } // .adventure-more {
-    //   display: block;
-    // }
+        flex-direction: row;
+        height: 50%;
+        .mountain-adv {
+          background: url('../../images/adventure-photos/mountain-hikers.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: auto;
+          margin: 10px;
+          margin-bottom: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .sky-adv {
+          background: url('../../images/adventure-photos/night-sky.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: auto;
+          margin: 10px;
+          margin-bottom: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      } // .adventure-more {
+      //   display: block;
+      // }
+    }
   }
-}
-
 }
 
 /* About page */
@@ -182,19 +179,16 @@
     padding-left: 10px;
     padding-right: 5px;
     a:hover {
-      color:#f0e4d1;
+      color: #f0e4d1;
     }
-
-      a {
-        color: white;
-        text-decoration:  none;
-        text-transform: uppercase;
-        font-size:2rem;
-        text-decoration-style: none;
-
-      }
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 2rem;
+      text-decoration-style: none;
+    }
   }
-  
   .entry-meta {
     position: absolute;
     bottom: 6.4px;
@@ -203,18 +197,16 @@
     width: 36%;
     color: white;
   }
-
-  .entry-content{
+  .entry-content {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     text-align: left;
-    p{
+    p {
       width: 60%;
     }
   }
-  
   .widget-area {
     float: right;
     right: 0px;
@@ -247,17 +239,135 @@
     margin-right: 30%;
     width: 70%;
   }
+  .content-area {
+    padding-top: 50px;
+  }
 }
 
 /* Single Journal Page*/
+
 .single-post {
-
-
+  width: 100vw;
+  .content-area {
+    padding-top: 50px;
+  }
+  .type-post {
+    footer {
+      display: flex;
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: black;
+      a {
+        text-decoration: none;
+        color: #498a92;
+      }
+    }
+  }
+  .entry-header {
+    position: relative;
+  }
+  .entry-title {
+    position: absolute;
+    top: 20px;
+    left: 20.2%;
+    background: #248A83;
+    width: 42%;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 5px;
+    color: white;
+  }
+  .entry-meta {
+    position: absolute;
+    bottom: 6.4px;
+    right: 217px;
+    background: #248A83;
+    width: 36%;
+    color: white;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .entry-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+    p {
+      width: 60%;
+    }
+  }
+  .entry-footer {
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    span {
+      margin-right: 15px;
+    }
+    .media-buttons {
+      margin-top: 50px;
+      .journal-media {
+        svg {
+          margin-right: 10px;
+        }
+        padding: 10px;
+        border: 1px solid black;
+        a {
+          text-decoration: none;
+          color: black;
+          
+        }
+      
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      
+    }
+    a:hover {
+      border: none;
+      color: white;
+      background-color: #808080;
+    }
+  }
 }
 
+.widget-area {
+  float: right;
+  right: 0px;
+  max-width: 413px;
+  position: absolute;
+  width: 30%;
+  text-align: left;
+  svg {
+    margin-right: 5px;
+  }
+  ul {
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    li {
+      margin-top: .5rem;
+      margin-right: 5px;
+    }
+  }
+}
 
+.site-content {
+  display: block;
+  border-right: 1px solid #e1e1e1;
+  margin-right: 30%;
+  width: 70%;
+}
 
-
+}
 
 /* Store page */
 
@@ -433,9 +543,6 @@
 //     }
 //   }
 // }
-
-
-
 /* 404 Page */
 
 .error404 {
