@@ -13,7 +13,7 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/build/css/style.min.css"/>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<?php wp_head(); ?>
 	</head>
 
@@ -31,7 +31,7 @@
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="tent-logo" src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg"/></a>	
 				
 				<div class="nav-search">
-					
+
 				<?php wp_nav_menu( array(  'theme_location' => 'primary',  'menu_id' => 'primary-menu' ) ); ?>
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 				
