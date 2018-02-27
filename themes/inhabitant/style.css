@@ -332,6 +332,13 @@ footer {
     text-transform: uppercase; }
   footer p {
     margin: .5rem 0 0 0; }
+  footer #footer-sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   footer #footer-sidebar1,
   footer #footer-sidebar2 {
     height: 190px;

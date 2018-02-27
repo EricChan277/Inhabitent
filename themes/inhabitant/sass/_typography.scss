@@ -105,6 +105,10 @@ footer {
 	p {
 		margin: .5rem 0 0 0;
 	}
+	#footer-sidebar {
+		display:flex;
+		align-items: center;
+	}
 	#footer-sidebar1,
 	#footer-sidebar2 {
 		height: 190px;
