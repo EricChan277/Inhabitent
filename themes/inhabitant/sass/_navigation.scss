@@ -122,6 +122,7 @@ a {
 	width: 100vw;
 	height: 50px;
 	margin-right: 50px;
+	padding-right: 50px;
 	background: hsla(0,0%,100%,.85);
 	border-bottom: black;
 	position: fixed;
@@ -132,8 +133,7 @@ a {
 		height: 50px;
 		padding-right: 10px;
 	}
-	// .primary-menu {
-	// }
+
 	li {
 		margin: 0px 10px;
 	}

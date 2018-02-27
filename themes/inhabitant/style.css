@@ -614,6 +614,7 @@ a {
   width: 100vw;
   height: 50px;
   margin-right: 50px;
+  padding-right: 50px;
   background: rgba(255, 255, 255, 0.85);
   border-bottom: black;
   position: fixed; }
@@ -1204,3 +1205,36 @@ object {
   border-right: 1px solid #e1e1e1; }
 
 /* Search Page */
+/* 404 Page */
+.error404 li {
+  list-style-type: none; }
+
+.error404 .widget_recent_entries ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0; }
+
+.error404 .widget-area {
+  float: right;
+  right: 0px;
+  max-width: 413px;
+  position: absolute;
+  width: 30%;
+  text-align: left; }
+  .error404 .widget-area svg {
+    margin-right: 5px; }
+  .error404 .widget-area ul {
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px; }
+    .error404 .widget-area ul li {
+      margin-top: .5rem;
+      margin-right: 5px; }
+
+.error404 .site-content {
+  padding-top: 50px;
+  display: block;
+  width: 70%;
+  text-align: left;
+  padding-left: 200px;
+  border-right: 1px solid #e1e1e1; }
