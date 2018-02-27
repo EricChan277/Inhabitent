@@ -52,14 +52,25 @@
       .entry-meta {
         display: flex;
         flex-direction: column;
-        border-top: solid 1px #e1e1e1;
-        border-top-width: 5px;
+        border-top: solid 5px #e1e1e1;
         text-decoration-style: none;
         color: black;
+        text-align: left;
+        .journal-text {
+          padding-left: 15px;
+        }
+        h2 {
+          padding-left: 15px;
+          margin: 0px;
+          a{ 
+            color:#808080;
+            text-decoration: none;
+          }
+        }
         .blog-button {
           border: 1px solid black;
           padding: 10px;
-          width: 30%;
+          width: 28%;
           margin: 20px;
           text-transform: uppercase;
           text-decoration-style: none;
