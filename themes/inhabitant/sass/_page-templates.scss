@@ -190,7 +190,18 @@
         text-decoration-style: none;
 
       }
-  } 
+  }
+  
+  .entry-meta {
+    position: absolute;
+    bottom: 6.4px;
+    right: 217px;
+    background: #248A83;
+    width: 36%;
+    color: white;
+
+  }
+  
   .widget-area {
     float: right;
     right: 0px;
