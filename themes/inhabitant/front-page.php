@@ -87,33 +87,33 @@ get_header(); ?>
     <article class="adventure-container">
         <div class="canoe-adv">
            <span> Getting Back to Nature in a Canoe </span>
-            <a> Read More </a>
+           <a href=''> Read More </a>
         </div>
        
        <div class="triple-adv-wrapper">
           
             <div class="beach-adv">
              <span>A Night with Friends at the beach</span>
-                <a> Read More </a>
+             <a href=''> Read More </a>
             </div>
             
             <div class="sky-mountain-wrapper">
                 <div class="mountain-adv">
                 <span>Taking in the View at Big mountain</span>
-                    <a> Read More </a>
+                <a href=''> Read More </a>
                 </div>
                 <div class="sky-adv">
                     <span>Star-Gazing at the Night Sky</span>
-                    <a> Read More </a>
+                    <a href=''> Read More </a>
                 </div>
             </div>
         </div>
     </article>
     
-    <a class="adventure-more"> More Adventures </a>
+ 
 
 </section>
-
+<div class="adventure-more"> <a href=''>More Adventures</a> </div>
 
 </main><!-- #main -->
 	</div><!-- #primary -->

@@ -969,6 +969,10 @@ object {
       color: white;
       text-decoration: none;
       border: 1px solid white; }
+    .page-template-default .adventure-container .canoe-adv a:hover {
+      border: none;
+      background-color: #808080;
+      border: none; }
   .page-template-default .adventure-container .triple-adv-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1007,6 +1011,10 @@ object {
         color: white;
         text-decoration: none;
         border: 1px solid white; }
+      .page-template-default .adventure-container .triple-adv-wrapper .beach-adv a:hover {
+        border: none;
+        background-color: #808080;
+        border: none; }
     .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1050,6 +1058,10 @@ object {
           text-decoration: none;
           border: 1px solid white;
           text-align: center; }
+        .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv a:hover {
+          border: none;
+          background-color: #808080;
+          border: none; }
       .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv {
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/night-sky.jpg");
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg");
@@ -1082,6 +1094,29 @@ object {
           color: white;
           text-decoration: none;
           border: 1px solid white; }
+        .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv a:hover {
+          border: none;
+          background-color: #808080;
+          border: none; }
+
+.page-template-default .adventure-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5px;
+  text-transform: uppercase;
+  margin-bottom: 100px; }
+  .page-template-default .adventure-more a {
+    background-color: #a1a1a1;
+    margin-top: 20px;
+    width: 20%;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none; }
+  .page-template-default .adventure-more a:hover {
+    border: none;
+    background-color: #808080;
+    border: none; }
 
 /* About page */
 .page-template-about .banner {
