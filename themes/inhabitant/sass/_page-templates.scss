@@ -322,51 +322,87 @@
         a {
           text-decoration: none;
           color: black;
-          
         }
-      
-    }
-    a {
-      text-decoration: none;
-      color: black;
-      
-    }
-    a:hover {
-      border: none;
-      color: white;
-      background-color: #808080;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        border: none;
+        color: white;
+        background-color: #808080;
+      }
     }
   }
-}
-
-.widget-area {
-  float: right;
-  right: 0px;
-  max-width: 413px;
-  position: absolute;
-  width: 30%;
-  text-align: left;
-  svg {
-    margin-right: 5px;
-  }
-  ul {
-    list-style: none;
-    margin-left: 0px;
-    padding-left: 0px;
-    li {
-      margin-top: .5rem;
+  .widget-area {
+    float: right;
+    right: 0px;
+    max-width: 413px;
+    position: absolute;
+    width: 30%;
+    text-align: left;
+    svg {
       margin-right: 5px;
     }
+    ul {
+      list-style: none;
+      margin-left: 0px;
+      padding-left: 0px;
+      li {
+        margin-top: .5rem;
+        margin-right: 5px;
+      }
+    }
   }
-}
+  .site-content {
+    display: block;
+    border-right: 1px solid #e1e1e1;
+    margin-right: 30%;
+    width: 70%;
+  }
+  .comments-area {
+    text-align: left;
+    margin-top: 10%;
+    padding-left: 10%;
 
-.site-content {
-  display: block;
-  border-right: 1px solid #e1e1e1;
-  margin-right: 30%;
-  width: 70%;
-}
+    a {
+      text-decoration: none;
+      color: #498a92;
+    }
+    .fn{
+      font-weight: bold;
+      font-style: normal;
+    }
+    
+    li{
+      article {
+        display: flex;
+        flex-direction: row;
+        .comment-author-avatar {
+          margin-right: 15px;
+        }
+      }
+    }
 
+    .comment-metadata {
+      color: #498a92;
+    }
+    .comment-content {
+      border-bottom: 1px solid #e1e1e1;
+    }
+
+    .reply {
+      padding-bottom: 15px;
+    }
+  
+
+    .comment-reply-title,
+    .comments-title {
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+  }
 }
 
 /* Store page */
