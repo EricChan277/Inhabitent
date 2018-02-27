@@ -43,10 +43,10 @@ get_header(); ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>
 						<header class="entry-header">
 			<?php if ( has_post_thumbnail() ) : ?>		
-					
-			<a href="<?php get_permalink();?>"> 
-				<?php the_post_thumbnail('medium'); ?>
-			</a>
+			
+			<a href="<?php echo get_post_permalink() ?>">
+			<?php the_post_thumbnail( 'medium' ); ?></a>
+
 			
 			<?php endif; ?>
 					<?php $price =  CFS()->get( 'price' );?>
