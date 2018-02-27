@@ -28,7 +28,7 @@ get_header(); ?>
 
 					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
+						<b><h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2></b>
 						<ul>
 						<?php
 							wp_list_categories( array(
