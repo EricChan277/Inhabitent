@@ -202,7 +202,17 @@
     background: #248A83;
     width: 36%;
     color: white;
+  }
 
+  .entry-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    p{
+      width: 60%;
+    }
   }
   
   .widget-area {
