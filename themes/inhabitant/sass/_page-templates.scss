@@ -311,6 +311,10 @@
       li {
         margin-top: .5rem;
         margin-right: 5px;
+        a{ 
+          color:#a1a1a1;
+          text-decoration: none;
+        }
       }
       .media-icons {
         display: flex;
@@ -460,6 +464,10 @@
       li {
         margin-top: .5rem;
         margin-right: 5px;
+        a{ 
+          color:#a1a1a1;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -650,6 +658,10 @@
       li {
         margin-top: .5rem;
         margin-right: 5px;
+        a{ 
+          color:#a1a1a1;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -665,29 +677,58 @@
 
 /* Search Page */
 
-// .page-template-search {
-//   padding: none; 
-//   .widget-area {
-//     float: right;
-//     right: 0px;
-//     max-width: 413px;
-//     position: absolute;
-//     width: 30%;
-//     text-align: left;
-//     svg {
-//       margin-right: 5px;
-//     }
-//     ul {
-//       list-style: none;
-//       margin-left: 0px;
-//       padding-left: 0px;
-//       li {
-//         margin-top: .5rem;
-//         margin-right: 5px;
-//       }
-//     }
-//   }
-// }
+.search {
+  width: 100%;
+  li {
+    list-style-type: none;
+  }
+  .widget_categories,
+  .widget_recent_entries {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-left: 0;
+      li {
+        a:link {
+          text-transform: capitalize;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .widget-area {
+    float: right;
+    right: 0px;
+    max-width: 413px;
+    position: absolute;
+    width: 30%;
+    text-align: left;
+    svg {
+      margin-right: 5px;
+    }
+    ul {
+      list-style: none;
+      margin-left: 0px;
+      padding-left: 0px;
+      li {
+        margin-top: .5rem;
+        margin-right: 5px;
+        a{ 
+          color:#a1a1a1;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .site-content {
+    padding-top: 50px;
+    display: block;
+    width: 70%;
+    text-align: left;
+    padding-left: 200px;
+    border-right: 1px solid #e1e1e1;
+  }
+}
 /* 404 Page */
 
 .error404 {
@@ -726,6 +767,10 @@
       li {
         margin-top: .5rem;
         margin-right: 5px;
+        a{ 
+          color:#a1a1a1;
+          text-decoration: none;
+        }
       }
     }
   }

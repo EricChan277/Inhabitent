@@ -1189,6 +1189,9 @@ object {
       .blog .widget-area ul li {
         margin-top: .5rem;
         margin-right: 5px; }
+        .blog .widget-area ul li a {
+          color: #a1a1a1;
+          text-decoration: none; }
       .blog .widget-area ul .media-icons {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1342,6 +1345,9 @@ object {
       .single-post .widget-area ul li {
         margin-top: .5rem;
         margin-right: 5px; }
+        .single-post .widget-area ul li a {
+          color: #a1a1a1;
+          text-decoration: none; }
   .single-post .site-content {
     display: block;
     border-right: 1px solid #e1e1e1;
@@ -1531,6 +1537,9 @@ object {
     .page-id-73 .widget-area ul li {
       margin-top: .5rem;
       margin-right: 5px; }
+      .page-id-73 .widget-area ul li a {
+        color: #a1a1a1;
+        text-decoration: none; }
 
 .page-id-73 .site-content {
   padding-top: 50px;
@@ -1541,6 +1550,46 @@ object {
   border-right: 1px solid #e1e1e1; }
 
 /* Search Page */
+.search {
+  width: 100%; }
+  .search li {
+    list-style-type: none; }
+  .search .widget_categories ul,
+  .search .widget_recent_entries ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0; }
+    .search .widget_categories ul li a:link,
+    .search .widget_recent_entries ul li a:link {
+      text-transform: capitalize;
+      text-decoration: none; }
+  .search .widget-area {
+    float: right;
+    right: 0px;
+    max-width: 413px;
+    position: absolute;
+    width: 30%;
+    text-align: left; }
+    .search .widget-area svg {
+      margin-right: 5px; }
+    .search .widget-area ul {
+      list-style: none;
+      margin-left: 0px;
+      padding-left: 0px; }
+      .search .widget-area ul li {
+        margin-top: .5rem;
+        margin-right: 5px; }
+        .search .widget-area ul li a {
+          color: #a1a1a1;
+          text-decoration: none; }
+  .search .site-content {
+    padding-top: 50px;
+    display: block;
+    width: 70%;
+    text-align: left;
+    padding-left: 200px;
+    border-right: 1px solid #e1e1e1; }
+
 /* 404 Page */
 .error404 {
   width: 100%; }
@@ -1571,6 +1620,9 @@ object {
       .error404 .widget-area ul li {
         margin-top: .5rem;
         margin-right: 5px; }
+        .error404 .widget-area ul li a {
+          color: #a1a1a1;
+          text-decoration: none; }
   .error404 .site-content {
     padding-top: 50px;
     display: block;
