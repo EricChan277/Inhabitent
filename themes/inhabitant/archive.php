@@ -26,6 +26,10 @@ get_header(); ?>
 					get_template_part( 'template-parts/content' );
 				?>
 
+				<div class="read-more">
+				<a href="<?php echo get_post_permalink() ?>"> Read More →</a>
+				</div>
+				
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
