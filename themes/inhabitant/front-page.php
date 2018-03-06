@@ -62,10 +62,10 @@ get_header(); ?>
                     <div class="journal-text">
                         <?php red_starter_posted_on(); ?> / 
                         <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-                    </div>
+                    
                 <h2>
                 <a href="<?php the_permalink(); ?>"> <?php the_title();?></a>
-                
+                    </div>
             </h2>  
                 <a class="blog-button" href="<?php the_permalink(); ?>">Read Entry</a>
                 </div><!-- .entry-meta -->

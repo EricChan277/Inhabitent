@@ -989,10 +989,12 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .page-template-default .journal-list .journ-art {
-    width: 30%;
+    margin: 20px;
+    width: 25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1018,14 +1020,26 @@ object {
       border-top: solid 5px #e1e1e1;
       -webkit-text-decoration-style: none;
               text-decoration-style: none;
-      color: black;
       text-align: left;
       height: 100%; }
       .page-template-default .journal-list .journ-art .entry-meta .journal-text {
-        padding-left: 15px; }
-      .page-template-default .journal-list .journ-art .entry-meta h2 {
         padding-left: 15px;
-        margin: 0px; }
+        padding-top: 10px; }
+      .page-template-default .journal-list .journ-art .entry-meta h2 {
+        margin: 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+        .page-template-default .journal-list .journ-art .entry-meta h2 a {
+          color: #808080; }
+          .page-template-default .journal-list .journ-art .entry-meta h2 a:hover {
+            color: #2f1339; }
       .page-template-default .journal-list .journ-art .entry-meta .blog-button {
         border: 1px solid black;
         padding: 10px;
@@ -1033,7 +1047,7 @@ object {
         text-transform: uppercase;
         -webkit-text-decoration-style: none;
                 text-decoration-style: none;
-        color: #808080;
+        color: black;
         text-decoration: none; }
       .page-template-default .journal-list .journ-art .entry-meta .blog-button:hover {
         color: white;
