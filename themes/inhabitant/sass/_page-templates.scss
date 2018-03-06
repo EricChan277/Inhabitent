@@ -370,7 +370,7 @@ h1,h2,h3 {
 
 /* Monthly Journal Sort */
 
-.archive {
+.date {
   width: 100vw;
   .entry-header {
     position: relative;
@@ -616,6 +616,26 @@ h1,h2,h3 {
         width: 320px;
         margin: 0 5px;
       }
+    }
+  }
+}
+/* Product Type Page */
+.tax-product_type {
+  .page-header {
+    border-bottom: dashed 1px #c8c8c8;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    article {
+      display: flex;
+      width: 20%;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
     }
   }
 }

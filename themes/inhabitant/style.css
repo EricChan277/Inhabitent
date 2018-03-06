@@ -1306,11 +1306,11 @@ h1, h2, h3 {
       border: 1px solid white; }
 
 /* Monthly Journal Sort */
-.archive {
+.date {
   width: 100vw; }
-  .archive .entry-header {
+  .date .entry-header {
     position: relative; }
-  .archive .entry-title {
+  .date .entry-title {
     position: absolute;
     top: 0px;
     left: 29.15%;
@@ -1318,23 +1318,23 @@ h1, h2, h3 {
     width: 30%;
     text-align: left;
     margin: 0; }
-    .archive .entry-title a:hover {
+    .date .entry-title a:hover {
       color: #f0e4d1; }
-    .archive .entry-title a {
+    .date .entry-title a {
       color: white;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 2rem;
       -webkit-text-decoration-style: none;
               text-decoration-style: none; }
-  .archive .entry-meta {
+  .date .entry-meta {
     position: absolute;
     bottom: 6.4px;
     right: 29.15%;
     background: #248A83;
     width: 25%;
     color: white; }
-  .archive .entry-content {
+  .date .entry-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1346,7 +1346,7 @@ h1, h2, h3 {
             align-items: center;
     width: 100%;
     text-align: left; }
-    .archive .entry-content p {
+    .date .entry-content p {
       width: 60%; }
 
 /* Single Journal Page*/
@@ -1566,6 +1566,35 @@ h1, h2, h3 {
       height: 200px;
       width: 320px;
       margin: 0 5px; }
+
+/* Product Type Page */
+.tax-product_type .page-header {
+  border-bottom: dashed 1px #c8c8c8;
+  margin-bottom: 50px;
+  padding-bottom: 50px; }
+
+.tax-product_type .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .tax-product_type .content-wrapper article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px; }
 
 /* Individual Products */
 .single-product {
