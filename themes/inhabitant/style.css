@@ -1560,12 +1560,14 @@ h1, h2, h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .post-type-archive-product .site-main .product-listing type-product {
-      margin: 0px 5px; }
-    .post-type-archive-product .site-main .product-listing img {
-      height: 200px;
-      width: 320px;
-      margin: 0 5px; }
+    .post-type-archive-product .site-main .product-listing a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .post-type-archive-product .site-main .product-listing a img {
+        height: 200px;
+        width: 320px;
+        margin: 0 5px; }
 
 /* Product Type Page */
 .tax-product_type .page-header {

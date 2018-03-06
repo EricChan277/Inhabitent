@@ -40,44 +40,29 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>
-						<header class="entry-header">
-			<?php if ( has_post_thumbnail() ) : ?>		
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<header class="entry-header">
+						<?php if ( has_post_thumbnail() ) : ?>		
 			
-			<a href="<?php echo get_post_permalink() ?>">
-			<?php the_post_thumbnail( 'medium' ); ?></a>
+							<a href="<?php echo get_post_permalink() ?>">
+							<?php the_post_thumbnail( 'medium' ); ?></a>
 
-			
-			<?php endif; ?>
-					<?php $price =  CFS()->get( 'price' );?>
-					<div class="product-meta-box">
-
-
-						<?php the_title('<p class="prod-title">', '</p>') ?>
-						<?php echo '<span class="price">'. $price . '</span>'?> 
+						<?php endif; ?>
 					
-
-					</div>
-					<p class="elipses">.........................................</p>
+						<?php $price =  CFS()->get( 'price' );?>
+						<div class="product-meta-box">
+							<?php the_title('<p class="prod-title">', '</p>') ?>
+							<?php echo '<span class="price">'. $price . '</span>'?> 
+						</div>
+						<p class="elipses">.........................................</p>
 					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-
-
-
-
-	
-					</div><!-- .entry-content -->
-					</article><!-- #post-## -->
-
-
+				</article><!-- #post-## -->
 			<?php endwhile; ?>
+		<?php the_posts_navigation(); ?>
 
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+	<?php else : ?>
+	
+	<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
 </section>

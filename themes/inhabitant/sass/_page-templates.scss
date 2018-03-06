@@ -608,13 +608,13 @@ h1,h2,h3 {
       width: 100%;
       justify-content: center;
       align-items: center;
-      type-product {
-        margin: 0px 5px;
-      }
-      img {
+      a {
+        display: flex;
+        img {
         height: 200px;
         width: 320px;
         margin: 0 5px;
+        }
       }
     }
   }
