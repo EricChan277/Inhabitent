@@ -63,10 +63,10 @@ get_header(); ?>
                         <?php red_starter_posted_on(); ?> / 
                         <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
                     
-                <h2>
+                <h3>
                 <a href="<?php the_permalink(); ?>"> <?php the_title();?></a>
                     </div>
-            </h2>  
+            </h3>  
                 <a class="blog-button" href="<?php the_permalink(); ?>">Read Entry</a>
                 </div><!-- .entry-meta -->
             </article>
@@ -111,9 +111,9 @@ get_header(); ?>
     </article>
     
  
-
 </section>
 <div class="adventure-more"> <a href=''>More Adventures</a> </div>
+
 
 </main><!-- #main -->
 	</div><!-- #primary -->

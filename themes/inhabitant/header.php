@@ -28,8 +28,9 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="tent-logo" src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg"/></a>	
-				
+					<div class="logo-svg">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="tent-logo" src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg"/></a>	
+					</div>
 				<div class="nav-search">
 
 				<?php wp_nav_menu( array(  'theme_location' => 'primary',  'menu_id' => 'primary-menu' ) ); ?>

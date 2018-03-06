@@ -123,24 +123,25 @@ a {
 	height: 50px;
 	margin-right: 50px;
 	padding-right: 50px;
-	background: hsla(0,0%,100%,.85);
-	border-bottom: black;
+	background: hsla(0, 0%, 100%, .85);
+	border-bottom: 1px solid #e1e1e1;
 	position: fixed;
 	z-index: 10;
 	text-transform: uppercase;
-
-	.tent-logo {
-		width: 50px;
-		height: 50px;
-		margin-left: 20px;
+	.logo-svg {
+		width: 30%;
+		.tent-logo {
+			width: 50px;
+			height: 50px;
+		}
 	}
 	.nav-search {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		width: 45%;
 	}
-
 	li {
 		margin: 0px 10px;
 	}

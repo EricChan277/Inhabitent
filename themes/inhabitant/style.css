@@ -661,14 +661,15 @@ a {
   margin-right: 50px;
   padding-right: 50px;
   background: rgba(255, 255, 255, 0.85);
-  border-bottom: black;
+  border-bottom: 1px solid #e1e1e1;
   position: fixed;
   z-index: 10;
   text-transform: uppercase; }
-  .main-navigation .tent-logo {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px; }
+  .main-navigation .logo-svg {
+    width: 30%; }
+    .main-navigation .logo-svg .tent-logo {
+      width: 50px;
+      height: 50px; }
   .main-navigation .nav-search {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -682,7 +683,8 @@ a {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    width: 45%; }
   .main-navigation li {
     margin: 0px 10px; }
   .main-navigation .search-form {
@@ -940,6 +942,12 @@ object {
               align-items: center; }
 
 /* Front page */
+.page-template-default h2 {
+  font-size: 2rem;
+  margin: 5rem 0px;
+  text-transform: uppercase;
+  font-weight: lighter; }
+
 .page-template-default a:link {
   text-decoration: none; }
 
@@ -956,14 +964,16 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .page-template-default .product-type-block-wrapper {
+  margin: 10px;
   width: 20%;
   height: auto;
   border: solid 1px #e1e1e1;
-  border-top-width: 10px; }
+  border-top-width: 5px; }
   .page-template-default .product-type-block-wrapper p {
     padding: 20px; }
   .page-template-default .product-type-block-wrapper a {
@@ -1054,9 +1064,8 @@ object {
         background-color: #808080;
         border: none; }
 
-.page-template-default .adventure-container {
-  width: 100vw;
-  height: 600px;
+.page-template-default .adventures {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1066,135 +1075,70 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white; }
-  .page-template-default .adventure-container .canoe-adv {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/canoe-girl.jpg");
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/canoe-girl.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .page-template-default .adventures .adventure-container {
+    height: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 5%;
-    font-size: 3rem; }
-    .page-template-default .adventure-container .canoe-adv a {
-      margin-top: 20px;
-      width: 30%;
-      font-size: 1.5rem;
-      color: white;
-      text-decoration: none;
-      border: 1px solid white; }
-    .page-template-default .adventure-container .canoe-adv a:hover {
-      border: none;
-      background-color: #808080;
-      border: none; }
-  .page-template-default .adventure-container .triple-adv-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 15px;
-    height: 100%;
-    width: 50%; }
-    .page-template-default .adventure-container .triple-adv-wrapper .beach-adv {
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/beach-bonfire.jpg");
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/beach-bonfire.jpg");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    width: 80vw; }
+    .page-template-default .adventures .adventure-container .canoe-adv {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/canoe-girl.jpg");
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/canoe-girl.jpg");
       background-size: cover;
       background-repeat: no-repeat;
-      width: 100%;
-      height: 48%;
-      margin: 10px;
-      margin-top: 0px;
+      width: 50%;
+      height: 99.6%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
+      padding: 5%;
       font-size: 3rem; }
-      .page-template-default .adventure-container .triple-adv-wrapper .beach-adv a {
+      .page-template-default .adventures .adventure-container .canoe-adv a {
         margin-top: 20px;
-        width: 25%;
+        width: 30%;
         font-size: 1.5rem;
         color: white;
         text-decoration: none;
         border: 1px solid white; }
-      .page-template-default .adventure-container .triple-adv-wrapper .beach-adv a:hover {
+      .page-template-default .adventures .adventure-container .canoe-adv a:hover {
         border: none;
         background-color: #808080;
         border: none; }
-    .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
+    .page-template-default .adventures .adventure-container .triple-adv-wrapper {
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      height: 50%; }
-      .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv {
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/mountain-hikers.jpg");
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/mountain-hikers.jpg");
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 15px;
+      height: 100%;
+      width: 50%; }
+      .page-template-default .adventures .adventure-container .triple-adv-wrapper .beach-adv {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/beach-bonfire.jpg");
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/beach-bonfire.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
-        height: auto;
+        width: 96.7%;
+        height: 48%;
         margin: 10px;
-        margin-bottom: 0px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        text-align: left;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        font-size: 2rem; }
-        .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv span {
-          width: 55%; }
-        .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv a {
-          margin-top: 20px;
-          width: 50%;
-          font-size: 1.5rem;
-          color: white;
-          text-decoration: none;
-          border: 1px solid white;
-          text-align: center; }
-        .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv a:hover {
-          border: none;
-          background-color: #808080;
-          border: none; }
-      .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv {
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/night-sky.jpg");
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: auto;
-        margin: 10px;
-        margin-bottom: 0px;
+        margin-top: 0px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1208,38 +1152,117 @@ object {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        font-size: 2rem; }
-        .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv span {
-          width: 75%; }
-        .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv a {
+        font-size: 3rem; }
+        .page-template-default .adventures .adventure-container .triple-adv-wrapper .beach-adv a {
           margin-top: 20px;
-          width: 50%;
+          width: 25%;
           font-size: 1.5rem;
           color: white;
           text-decoration: none;
           border: 1px solid white; }
-        .page-template-default .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv a:hover {
+        .page-template-default .adventures .adventure-container .triple-adv-wrapper .beach-adv a:hover {
           border: none;
           background-color: #808080;
           border: none; }
+      .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        height: 50%; }
+        .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv {
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/mountain-hikers.jpg");
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/mountain-hikers.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: auto;
+          margin: 10px;
+          margin-bottom: 0px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          text-align: left;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          font-size: 2rem; }
+          .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv span {
+            width: 55%; }
+          .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv a {
+            margin-top: 20px;
+            width: 50%;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            text-align: center; }
+          .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv a:hover {
+            border: none;
+            background-color: #808080;
+            border: none; }
+        .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv {
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/night-sky.jpg");
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: auto;
+          margin: 10px;
+          margin-bottom: 0px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          font-size: 2rem; }
+          .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv span {
+            width: 75%; }
+          .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv a {
+            margin-top: 20px;
+            width: 50%;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+            border: 1px solid white; }
+          .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv a:hover {
+            border: none;
+            background-color: #808080;
+            border: none; }
 
 .page-template-default .adventure-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 5px;
-  text-transform: uppercase;
-  margin-bottom: 100px; }
+  text-transform: uppercase; }
   .page-template-default .adventure-more a {
-    background-color: #a1a1a1;
-    margin-top: 20px;
-    width: 20%;
+    background-color: #808080;
+    margin: 30px 10%;
+    padding: 10px;
     font-size: 1.5rem;
     color: white;
     text-decoration: none; }
   .page-template-default .adventure-more a:hover {
     border: none;
-    background-color: #808080;
+    background-color: #a1a1a1;
     border: none; }
 
 /* About page */
