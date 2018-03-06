@@ -54,6 +54,8 @@
       url('../../fonts/novecentosanswide-normal-webfont.woff2') format('woff2'),
       url('../../fonts/novecentosanswide-normal-webfont.woff') format('woff'),
       url('../../fonts/novecentosanswide-normal-webfont.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
 }
 
 @font-face {
@@ -63,11 +65,13 @@
       url('../../fonts/novecentosanswide-demibold-webfont.woff2') format('woff2'),
       url('../../fonts/novecentosanswide-demibold-webfont.woff') format('woff'),
       url('../../fonts/novecentosanswide-demibold-webfont.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
 }
 
-body {
+body,span {
   font-family: 'Merriweather', sans-serif;
 }
-h1,h2,h3 {
+h1,h2,h3,a {
   font-family: 'Novacento', sans-serif;
 }

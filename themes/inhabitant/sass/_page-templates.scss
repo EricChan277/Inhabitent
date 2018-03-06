@@ -139,6 +139,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: left;
+    a {
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 20px;
+      width: 23%;
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      &:hover {
+        border: none;
+        background-color: #808080;
+      }
+    }
     .adventure-container {
       height: 600px;
       display: flex;
@@ -157,19 +172,6 @@
         flex-direction: column;
         padding: 5%;
         font-size: 3rem;
-        a {
-          margin-top: 20px;
-          width: 30%;
-          font-size: 1.5rem;
-          color: white;
-          text-decoration: none;
-          border: 1px solid white;
-        }
-        a:hover {
-          border: none;
-          background-color: #808080;
-          border: none;
-        }
       }
       .triple-adv-wrapper {
         flex-direction: column;
@@ -189,18 +191,8 @@
           align-items: center;
           flex-direction: column;
           font-size: 3rem;
-          a {
-            margin-top: 20px;
-            width: 25%;
-            font-size: 1.5rem;
-            color: white;
-            text-decoration: none;
-            border: 1px solid white;
-          }
-          a:hover {
-            border: none;
-            background-color: #808080;
-            border: none;
+          span {
+            width: 80%;
           }
         }
         .sky-mountain-wrapper {
@@ -216,27 +208,16 @@
             margin: 10px;
             margin-bottom: 0px;
             display: flex;
-            justify-content: center;
             text-align: left;
             align-items: center;
             flex-direction: column;
             font-size: 2rem;
             span {
-              width: 55%;
+              margin-top: 10%;
+              width: 65%;
             }
             a {
-              margin-top: 20px;
-              width: 50%;
-              font-size: 1.5rem;
-              color: white;
-              text-decoration: none;
-              border: 1px solid white;
-              text-align: center;
-            }
-            a:hover {
-              border: none;
-              background-color: #808080;
-              border: none;
+              width: 40%;
             }
           }
           .sky-adv {
@@ -248,25 +229,15 @@
             margin: 10px;
             margin-bottom: 0px;
             display: flex;
-            justify-content: center;
             align-items: center;
             flex-direction: column;
             font-size: 2rem;
             span {
+              margin-top: 10%;
               width: 75%;
             }
             a {
-              margin-top: 20px;
-              width: 50%;
-              font-size: 1.5rem;
-              color: white;
-              text-decoration: none;
-              border: 1px solid white;
-            }
-            a:hover {
-              border: none;
-              background-color: #808080;
-              border: none;
+              width: 40%;
             }
           }
         }

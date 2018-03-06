@@ -257,17 +257,21 @@ th {
 @font-face {
   font-family: 'Novacento';
   src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
-  src: url("../../fonts/novecentosanswide-normal-webfont.eot#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"); }
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
 
 @font-face {
   font-family: 'Novacento';
   src: url("../../fonts/novecentosanswide-demibold-webfont.eot.eot");
-  src: url("../../fonts/novecentosanswide-demibold-webfont.eot#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"); }
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
 
-body {
+body, span {
   font-family: 'Merriweather', sans-serif; }
 
-h1, h2, h3 {
+h1, h2, h3, a {
   font-family: 'Novacento', sans-serif; }
 
 /*--------------------------------------------------------------
@@ -1078,7 +1082,20 @@ object {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  text-align: left; }
+  .page-template-default .adventures a {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    width: 23%;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white; }
+    .page-template-default .adventures a:hover {
+      border: none;
+      background-color: #808080; }
   .page-template-default .adventures .adventure-container {
     height: 600px;
     display: -webkit-box;
@@ -1111,17 +1128,6 @@ object {
               flex-direction: column;
       padding: 5%;
       font-size: 3rem; }
-      .page-template-default .adventures .adventure-container .canoe-adv a {
-        margin-top: 20px;
-        width: 30%;
-        font-size: 1.5rem;
-        color: white;
-        text-decoration: none;
-        border: 1px solid white; }
-      .page-template-default .adventures .adventure-container .canoe-adv a:hover {
-        border: none;
-        background-color: #808080;
-        border: none; }
     .page-template-default .adventures .adventure-container .triple-adv-wrapper {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1153,17 +1159,8 @@ object {
             -ms-flex-direction: column;
                 flex-direction: column;
         font-size: 3rem; }
-        .page-template-default .adventures .adventure-container .triple-adv-wrapper .beach-adv a {
-          margin-top: 20px;
-          width: 25%;
-          font-size: 1.5rem;
-          color: white;
-          text-decoration: none;
-          border: 1px solid white; }
-        .page-template-default .adventures .adventure-container .triple-adv-wrapper .beach-adv a:hover {
-          border: none;
-          background-color: #808080;
-          border: none; }
+        .page-template-default .adventures .adventure-container .triple-adv-wrapper .beach-adv span {
+          width: 80%; }
       .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1185,9 +1182,6 @@ object {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
           text-align: left;
           -webkit-box-align: center;
               -ms-flex-align: center;
@@ -1198,19 +1192,10 @@ object {
                   flex-direction: column;
           font-size: 2rem; }
           .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv span {
-            width: 55%; }
+            margin-top: 10%;
+            width: 65%; }
           .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv a {
-            margin-top: 20px;
-            width: 50%;
-            font-size: 1.5rem;
-            color: white;
-            text-decoration: none;
-            border: 1px solid white;
-            text-align: center; }
-          .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .mountain-adv a:hover {
-            border: none;
-            background-color: #808080;
-            border: none; }
+            width: 40%; }
         .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv {
           background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/night-sky.jpg");
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg");
@@ -1223,9 +1208,6 @@ object {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
@@ -1235,18 +1217,10 @@ object {
                   flex-direction: column;
           font-size: 2rem; }
           .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv span {
+            margin-top: 10%;
             width: 75%; }
           .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv a {
-            margin-top: 20px;
-            width: 50%;
-            font-size: 1.5rem;
-            color: white;
-            text-decoration: none;
-            border: 1px solid white; }
-          .page-template-default .adventures .adventure-container .triple-adv-wrapper .sky-mountain-wrapper .sky-adv a:hover {
-            border: none;
-            background-color: #808080;
-            border: none; }
+            width: 40%; }
 
 .page-template-default .adventure-more {
   display: -webkit-box;
